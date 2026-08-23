@@ -1,0 +1,658 @@
+[
+[
+"Number",
+"Undergraduate Course",
+"F2026",
+"W2027",
+"S2027",
+"M2027"
+],
+[
+"1A",
+"Computer Engineering Seminar",
+"",
+"X",
+"",
+""
+],
+[
+"1B",
+"Ten Puzzling Problems in Computer Engineering",
+"",
+"",
+"X",
+""
+],
+[
+"3",
+"Introduction to Python Programming For Engineers",
+"X",
+"",
+"",
+""
+],
+[
+"5",
+"Introduction to Electrical and Computer Engineering",
+"X",
+"X",
+"",
+""
+],
+[
+"6",
+"The Physics of Energy, Information, and Communication",
+"",
+"",
+"X",
+""
+],
+[
+"10A/10AL",
+"Foundations of Analog and Digital Circuits & Systems (ECE 10AL)",
+"X",
+"X",
+"",
+""
+],
+[
+"10B/10BL",
+"Foundations of Analog and Digital Circuits & Systems (ECE 10BL)",
+"",
+"X",
+"X",
+""
+],
+[
+"10C/10CL",
+"Foundations of Analog and Digital Circuits & Systems (ECE10CL)",
+"X",
+"",
+"X",
+""
+],
+[
+"15A",
+"Fundamentals of Logic Design",
+"X",
+"X",
+"",
+""
+],
+[
+"120A",
+"Integrated Circuit Design & Fabrication",
+"",
+"X",
+"",
+""
+],
+[
+"120B",
+"Integrated Circuit Design & Fabrication",
+"",
+"",
+"X",
+""
+],
+[
+"122A",
+"VLSI Principles",
+"X",
+"",
+"",
+""
+],
+[
+"122B",
+"VLSI Architecture and Design",
+"",
+"X",
+"",
+""
+],
+[
+"130A",
+"Signal Analysis & Processing",
+"X",
+"X",
+"",
+""
+],
+[
+"130B",
+"Signal Analysis & Processing",
+"",
+"",
+"X",
+""
+],
+[
+"130C",
+"Introduction to Applied Linear Algebra",
+"",
+"",
+"X",
+""
+],
+[
+"132",
+"Intro to Solid State Electronic Devices",
+"X",
+"",
+"",
+""
+],
+[
+"133",
+"Introduction to Optimization and Learning",
+"X",
+"",
+"",
+""
+],
+[
+"134",
+"Introduction to Fields & Waves",
+"X",
+"",
+"",
+""
+],
+[
+"135",
+"Optical Fiber Communication",
+"",
+"X",
+"",
+""
+],
+[
+"136A",
+"Introduction to Optics and Photonics",
+"X",
+"",
+"",
+""
+],
+[
+"136B",
+"Optics and Imaging",
+"",
+"X",
+"",
+""
+],
+[
+"136C",
+"Quantum Photonics",
+"",
+"",
+"X",
+""
+],
+[
+"137A",
+"Circuits & Electronics I",
+"",
+"X",
+"",
+""
+],
+[
+"137B",
+"Circuits & Electronics II",
+"",
+"",
+"X",
+""
+],
+[
+"139",
+"Probability & Statistics",
+"X",
+"",
+"X",
+""
+],
+[
+"141A",
+"Introduction to NEMS & MEMS",
+"",
+"XD",
+"",
+""
+],
+[
+"141B",
+"MEMS: Processing and Device Characterization",
+"",
+"",
+"XD",
+""
+],
+[
+"142",
+"Introduction to Power Electronics",
+"",
+"TBA",
+"",
+""
+],
+[
+"144",
+"Electromagnetic Fields & Waves",
+"",
+"X",
+"",
+""
+],
+[
+"145A",
+"Communication Electronics I",
+"X",
+"",
+"",
+""
+],
+[
+"145B",
+"Communication Electronics II",
+"",
+"X",
+"",
+""
+],
+[
+"145C",
+"Communication Electronics III",
+"",
+"",
+"X",
+""
+],
+[
+"146A",
+"Digital Communication Fundamentals",
+"X",
+"",
+"",
+""
+],
+[
+"146B",
+"Communication Systems Design",
+"",
+"X",
+"",
+""
+],
+[
+"147A",
+"Feedback Control Systems - Theory & Design",
+"X",
+"",
+"",
+""
+],
+[
+"147B",
+"Digital Control Systems - Theory & Design",
+"",
+"X",
+"",
+""
+],
+[
+"147C",
+"Control Systems Design Project",
+"",
+"",
+"X",
+""
+],
+[
+"148",
+"Applications of Signal Analysis & Processing",
+"",
+"",
+"X",
+""
+],
+[
+"149",
+"Game Theory for Networked Systems",
+"",
+"X",
+"",
+""
+],
+[
+"150",
+"Mobile Embedded Systems",
+"",
+"",
+"*NO",
+""
+],
+[
+"152A",
+"Digital Design Principles",
+"",
+"X",
+"X",
+""
+],
+[
+"152B",
+"Digital System Design",
+"",
+"X",
+"",
+""
+],
+[
+"153A",
+"Hardware / Software Interface",
+"*NO",
+"",
+"",
+""
+],
+[
+"153B",
+"Sensor & Peripheral Interface Design",
+"X",
+"",
+"X",
+""
+],
+[
+"154A",
+"Introduction to Computer Architecture",
+"X",
+"",
+"",
+""
+],
+[
+"154B",
+"Advanced Computer Architecture",
+"",
+"X",
+"",
+""
+],
+[
+"157A",
+"Machine Learning in Design and Test Automation",
+"X",
+"",
+"",
+""
+],
+[
+"157B",
+"Artificial Intelligence in Design and Test Automation",
+"",
+"X",
+"",
+""
+],
+[
+"157C",
+"Principles of Verification and Test",
+"",
+"",
+"X",
+""
+],
+[
+"158",
+"Digital Signal Processing",
+"",
+"",
+"*NO",
+""
+],
+[
+"160",
+"Multimedia Systems",
+"",
+"",
+"*NO",
+""
+],
+[
+"162A",
+"Quantum Description of Electronic Materials",
+"X",
+"",
+"",
+""
+],
+[
+"162B",
+"Fundamentals of Solid State",
+"",
+"XD",
+"",
+""
+],
+[
+"162C",
+"Optoelectronic Materials & Devices",
+"",
+"",
+"X",
+""
+],
+[
+"178",
+"Introduction to Digital Image & Video Processing",
+"",
+"",
+"X",
+""
+],
+[
+"179D",
+"Introduction to Robotics: Dynamics and Control",
+"",
+"",
+"X",
+""
+],
+[
+"179P",
+"Introduction to Robotics: Planning and Kinematics",
+"",
+"X",
+"",
+""
+],
+[
+"180",
+"Introduction to Deep Learning",
+"*NO",
+"",
+"",
+""
+],
+[
+"181",
+"Introduction to Computer Vision",
+"X",
+"XD",
+"",
+""
+],
+[
+"183",
+"Nonlinear Phenomena",
+"",
+"",
+"XD",
+""
+],
+[
+"184",
+"Introduction to Video Game Development",
+"",
+"",
+"X",
+""
+],
+[
+"186",
+"Probabilistic Machine Learning",
+"",
+"",
+"X",
+""
+],
+[
+"188A",
+"Senior Electrical Engineering Project",
+"X",
+"",
+"",
+""
+],
+[
+"188B",
+"Senior Electrical Engineering Project",
+"",
+"X",
+"",
+""
+],
+[
+"188C",
+"Senior Electrical Engineering Project",
+"",
+"",
+"X",
+""
+],
+[
+"189A",
+"Senior Computer Systems Project",
+"X",
+"",
+"",
+""
+],
+[
+"189B",
+"Senior Computer Systems Project",
+"",
+"X",
+"",
+""
+],
+[
+"189C",
+"Senior Computer Systems Project",
+"",
+"",
+"X",
+""
+],
+[
+"194",
+"Special Topics ECE",
+"",
+"",
+"",
+""
+],
+[
+"194A",
+"Special Topics ECE",
+"",
+"",
+"",
+""
+],
+[
+"194B",
+"Special Topics ECE",
+"",
+"",
+"",
+""
+],
+[
+"194BB",
+"Special Topics ECE: Computer Engineering",
+"",
+"",
+"X (DS)",
+""
+],
+[
+"194D",
+"Special Topics ECE",
+"",
+"",
+"",
+""
+],
+[
+"194E",
+"Special Topics ECE",
+"",
+"",
+"",
+""
+],
+[
+"194M",
+"Special Topics ECE: Special Topics in ECE",
+"",
+"",
+"",
+""
+],
+[
+"194N",
+"Special Topics ECE:",
+"",
+"",
+"",
+""
+],
+[
+"194P",
+"Special Topics ECE: Advanced Video Game Develop.",
+"X (PS)",
+"",
+"",
+""
+],
+[
+"194Q",
+"Special Topics ECE: Special Topics in ECE",
+"",
+"X (PS)",
+"",
+""
+],
+[
+"194R",
+"Special Topics ECE:",
+"",
+"",
+"",
+""
+],
+[
+"194T",
+"Special Topics ECE: Robot Control",
+"",
+"",
+"X (PS)",
+""
+]
+]

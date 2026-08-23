@@ -1,0 +1,1234 @@
+[
+ {
+  "code": "EE",
+  "name": "Electrical Engineering (BS)",
+  "catalog_year": "2026-27",
+  "total_units": 189,
+  "source": "UCSB GEAR 2026-27, Electrical Engineering (p. 24)",
+  "source_url": "https://engineering.ucsb.edu/sites/default/files/images/26-27_GEAR.pdf",
+  "notes": [
+   "Courses used for major requirements must be taken for a letter grade.",
+   "Departmental electives need your faculty adviser's approval."
+  ],
+  "groups": [
+   {
+    "id": "prep",
+    "name": "Preparation for the major",
+    "requirements": [
+     {
+      "label": "CHEM 1A or 2A or ECE 6",
+      "tree": {
+       "t": "or",
+       "kids": [
+        {
+         "t": "course",
+         "code": "CHEM 1A"
+        },
+        {
+         "t": "course",
+         "code": "CHEM 2A"
+        },
+        {
+         "t": "course",
+         "code": "ECE 6"
+        }
+       ]
+      },
+      "units": 4
+     },
+     {
+      "label": "CMPSC 9 or CMPSC 16",
+      "tree": {
+       "t": "or",
+       "kids": [
+        {
+         "t": "course",
+         "code": "CMPSC 9"
+        },
+        {
+         "t": "course",
+         "code": "CMPSC 16"
+        }
+       ]
+      },
+      "units": 4
+     },
+     {
+      "label": "ECE 3",
+      "tree": {
+       "t": "course",
+       "code": "ECE 3"
+      },
+      "units": 4
+     },
+     {
+      "label": "ECE 5",
+      "tree": {
+       "t": "course",
+       "code": "ECE 5"
+      },
+      "units": 4
+     },
+     {
+      "label": "ECE 10A, 10AL, 10B, 10BL, 10C, 10CL",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "ECE 10A"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10AL"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10B"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10BL"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10C"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10CL"
+        }
+       ]
+      },
+      "units": 15
+     },
+     {
+      "label": "ECE 15A",
+      "tree": {
+       "t": "course",
+       "code": "ECE 15A"
+      },
+      "units": 4
+     },
+     {
+      "label": "MATH 2A-B or 3A-B",
+      "tree": {
+       "t": "or",
+       "kids": [
+        {
+         "t": "and",
+         "kids": [
+          {
+           "t": "course",
+           "code": "MATH 2A"
+          },
+          {
+           "t": "course",
+           "code": "MATH 2B"
+          }
+         ]
+        },
+        {
+         "t": "and",
+         "kids": [
+          {
+           "t": "course",
+           "code": "MATH 3A"
+          },
+          {
+           "t": "course",
+           "code": "MATH 3B"
+          }
+         ]
+        }
+       ]
+      },
+      "units": 8
+     },
+     {
+      "label": "MATH 4A-B",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "MATH 4A"
+        },
+        {
+         "t": "course",
+         "code": "MATH 4B"
+        }
+       ]
+      },
+      "units": 8
+     },
+     {
+      "label": "MATH 6A-B",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "MATH 6A"
+        },
+        {
+         "t": "course",
+         "code": "MATH 6B"
+        }
+       ]
+      },
+      "units": 8
+     },
+     {
+      "label": "PHYS 7A, 7B, 7C, 7D, 7L",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "PHYS 7A"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7B"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7C"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7D"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7L"
+        }
+       ]
+      },
+      "units": 16
+     },
+     {
+      "label": "ECE 130A-B",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "ECE 130A"
+        },
+        {
+         "t": "course",
+         "code": "ECE 130B"
+        }
+       ]
+      },
+      "units": 8
+     },
+     {
+      "label": "ECE 139",
+      "tree": {
+       "t": "course",
+       "code": "ECE 139"
+      },
+      "units": 4
+     }
+    ]
+   },
+   {
+    "id": "upper",
+    "name": "Upper division major",
+    "requirements": [
+     {
+      "label": "ECE 134",
+      "tree": {
+       "t": "course",
+       "code": "ECE 134"
+      },
+      "units": 4
+     },
+     {
+      "label": "ECE 152A",
+      "tree": {
+       "t": "course",
+       "code": "ECE 152A"
+      },
+      "units": 5
+     },
+     {
+      "label": "ECE 153A or 153B",
+      "tree": {
+       "t": "or",
+       "kids": [
+        {
+         "t": "course",
+         "code": "ECE 153A"
+        },
+        {
+         "t": "course",
+         "code": "ECE 153B"
+        }
+       ]
+      },
+      "units": 4,
+      "note": "If you take both, one counts as a departmental elective."
+     },
+     {
+      "label": "ECE 188A-B-C",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "ECE 188A"
+        },
+        {
+         "t": "course",
+         "code": "ECE 188B"
+        },
+        {
+         "t": "course",
+         "code": "ECE 188C"
+        }
+       ]
+      },
+      "units": 12
+     },
+     {
+      "label": "ENGR 101",
+      "tree": {
+       "t": "course",
+       "code": "ENGR 101"
+      },
+      "units": 3,
+      "note": "May be taken any quarter of senior year."
+     }
+    ]
+   }
+  ],
+  "electives": {
+   "name": "Departmental electives",
+   "min_units": 36,
+   "note": "Must include an approved depth sequence for your track, or another adviser-approved sequence of at least four courses. ECE 192/196 count for at most 4 units combined; TMP for at most one course. ECE 194 special topics also count but are not listed in this app.",
+   "codes": [
+    "ECE 120A",
+    "ECE 120B",
+    "ECE 122A",
+    "ECE 122B",
+    "ECE 123",
+    "ECE 125",
+    "ECE 130C",
+    "ECE 132",
+    "ECE 133",
+    "ECE 135",
+    "ECE 136A",
+    "ECE 136B",
+    "ECE 136C",
+    "ECE 137A",
+    "ECE 137B",
+    "ECE 141A",
+    "ECE 141B",
+    "ECE 142",
+    "ECE 144",
+    "ECE 145A",
+    "ECE 145B",
+    "ECE 145C",
+    "ECE 146A",
+    "ECE 146B",
+    "ECE 147A",
+    "ECE 147B",
+    "ECE 147C",
+    "ECE 148",
+    "ECE 149",
+    "ECE 152B",
+    "ECE 153A",
+    "ECE 153B",
+    "ECE 154A",
+    "ECE 154B",
+    "ECE 157A",
+    "ECE 157B",
+    "ECE 157C",
+    "ECE 158",
+    "ECE 160",
+    "ECE 162A",
+    "ECE 162B",
+    "ECE 162C",
+    "ECE 178",
+    "ECE 179D",
+    "ECE 179P",
+    "ECE 180",
+    "ECE 181",
+    "ECE 183",
+    "ECE 184",
+    "ECE 186",
+    "MATRL 100A",
+    "MATRL 100B",
+    "MATRL 100C",
+    "MATRL 101",
+    "MATRL 162A",
+    "MATRL 162B",
+    "TMP 120",
+    "TMP 122"
+   ]
+  },
+  "depth": {
+   "name": "Depth sequence (track)",
+   "min_complete": 1,
+   "label": "track",
+   "note": "One approved track, or another sequence of at least four courses approved by your faculty adviser by the end of fall quarter, junior year.",
+   "source_url": "https://www.ece.ucsb.edu/undergrad/curriculum",
+   "items": [
+    {
+     "name": "Signal Processing and Sensing",
+     "rules": [
+      {
+       "kind": "atLeast",
+       "n": 4,
+       "options": [
+        [
+         "ECE 130C"
+        ],
+        [
+         "ECE 133"
+        ],
+        [
+         "ECE 148"
+        ],
+        [
+         "ECE 158"
+        ],
+        [
+         "ECE 178"
+        ],
+        [
+         "ECE 180"
+        ],
+        [
+         "ECE 181"
+        ],
+        [
+         "ECE 186"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Robotics and Control",
+     "rules": [
+      {
+       "kind": "atLeast",
+       "n": 4,
+       "options": [
+        [
+         "ECE 130C"
+        ],
+        [
+         "ECE 147A"
+        ],
+        [
+         "ECE 147B"
+        ],
+        [
+         "ECE 147C"
+        ],
+        [
+         "ECE 179D"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "High Speed, High Frequency Integrated Circuits",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 132"
+        ],
+        [
+         "ECE 137A"
+        ],
+        [
+         "ECE 137B"
+        ],
+        [
+         "ECE 145A"
+        ],
+        [
+         "ECE 145B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Wireless Communications and Sensing",
+     "rules": [
+      {
+       "kind": "atLeast",
+       "n": 4,
+       "options": [
+        [
+         "ECE 130C"
+        ],
+        [
+         "ECE 146A"
+        ],
+        [
+         "ECE 146B"
+        ],
+        [
+         "ECE 148"
+        ],
+        [
+         "ECE 158"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Photonics",
+     "rules": [
+      {
+       "kind": "atLeast",
+       "n": 4,
+       "options": [
+        [
+         "ECE 132"
+        ],
+        [
+         "ECE 135"
+        ],
+        [
+         "ECE 136A"
+        ],
+        [
+         "ECE 136B"
+        ],
+        [
+         "ECE 136C"
+        ],
+        [
+         "ECE 144"
+        ],
+        [
+         "ECE 162A"
+        ],
+        [
+         "ECE 162B"
+        ],
+        [
+         "ECE 162C"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Semiconductors and Integrated Circuits",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 120A"
+        ],
+        [
+         "ECE 120B",
+         "ECE 137B"
+        ],
+        [
+         "ECE 132"
+        ],
+        [
+         "ECE 137A"
+        ],
+        [
+         "ECE 142"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Computer Architecture",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 154A"
+        ],
+        [
+         "ECE 154B"
+        ]
+       ]
+      },
+      {
+       "kind": "atLeast",
+       "n": 2,
+       "options": [
+        [
+         "ECE 152B"
+        ],
+        [
+         "ECE 153A"
+        ],
+        [
+         "ECE 153B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Digital VLSI",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 122A",
+         "ECE 123"
+        ],
+        [
+         "ECE 122B"
+        ]
+       ]
+      },
+      {
+       "kind": "atLeast",
+       "n": 2,
+       "options": [
+        [
+         "ECE 132"
+        ],
+        [
+         "ECE 157A"
+        ],
+        [
+         "ECE 157B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Machine Learning",
+     "rules": [
+      {
+       "kind": "atLeast",
+       "n": 4,
+       "options": [
+        [
+         "ECE 133"
+        ],
+        [
+         "ECE 157A"
+        ],
+        [
+         "ECE 157B"
+        ],
+        [
+         "ECE 180"
+        ],
+        [
+         "ECE 181"
+        ],
+        [
+         "ECE 186"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "code": "CE",
+  "name": "Computer Engineering (BS)",
+  "catalog_year": "2026-27",
+  "total_units": 191,
+  "source": "UCSB GEAR 2026-27, Computer Engineering (p. 20)",
+  "source_url": "https://engineering.ucsb.edu/sites/default/files/images/26-27_GEAR.pdf",
+  "notes": [
+   "Courses used for major requirements must be taken for a letter grade.",
+   "Departmental electives need your faculty adviser's approval."
+  ],
+  "groups": [
+   {
+    "id": "prep",
+    "name": "Preparation for the major",
+    "requirements": [
+     {
+      "label": "ECE 3 or CMPSC 8",
+      "tree": {
+       "t": "or",
+       "kids": [
+        {
+         "t": "course",
+         "code": "ECE 3"
+        },
+        {
+         "t": "course",
+         "code": "CMPSC 8"
+        }
+       ]
+      },
+      "units": 4,
+      "note": "From the CE four-year plan (GEAR p. 21) and the department's curriculum page; not itemised on the GEAR requirement list."
+     },
+     {
+      "label": "CMPSC 16",
+      "tree": {
+       "t": "course",
+       "code": "CMPSC 16"
+      },
+      "units": 4
+     },
+     {
+      "label": "CMPSC 24",
+      "tree": {
+       "t": "course",
+       "code": "CMPSC 24"
+      },
+      "units": 4
+     },
+     {
+      "label": "CMPSC 32",
+      "tree": {
+       "t": "course",
+       "code": "CMPSC 32"
+      },
+      "units": 4
+     },
+     {
+      "label": "CMPSC 41",
+      "tree": {
+       "t": "course",
+       "code": "CMPSC 41"
+      },
+      "units": 4,
+      "note": "New for 2026-27, in place of CMPSC 40."
+     },
+     {
+      "label": "ECE 1A-1B",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "ECE 1A"
+        },
+        {
+         "t": "course",
+         "code": "ECE 1B"
+        }
+       ]
+      },
+      "units": 2
+     },
+     {
+      "label": "ECE 5",
+      "tree": {
+       "t": "course",
+       "code": "ECE 5"
+      },
+      "units": 4
+     },
+     {
+      "label": "ECE 10A, 10AL, 10B, 10BL, 10C, 10CL",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "ECE 10A"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10AL"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10B"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10BL"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10C"
+        },
+        {
+         "t": "course",
+         "code": "ECE 10CL"
+        }
+       ]
+      },
+      "units": 15
+     },
+     {
+      "label": "ECE 15A",
+      "tree": {
+       "t": "course",
+       "code": "ECE 15A"
+      },
+      "units": 4
+     },
+     {
+      "label": "MATH 2A-B or 3A-B",
+      "tree": {
+       "t": "or",
+       "kids": [
+        {
+         "t": "and",
+         "kids": [
+          {
+           "t": "course",
+           "code": "MATH 2A"
+          },
+          {
+           "t": "course",
+           "code": "MATH 2B"
+          }
+         ]
+        },
+        {
+         "t": "and",
+         "kids": [
+          {
+           "t": "course",
+           "code": "MATH 3A"
+          },
+          {
+           "t": "course",
+           "code": "MATH 3B"
+          }
+         ]
+        }
+       ]
+      },
+      "units": 8
+     },
+     {
+      "label": "MATH 4A-B",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "MATH 4A"
+        },
+        {
+         "t": "course",
+         "code": "MATH 4B"
+        }
+       ]
+      },
+      "units": 8
+     },
+     {
+      "label": "MATH 6A",
+      "tree": {
+       "t": "course",
+       "code": "MATH 6A"
+      },
+      "units": 4
+     },
+     {
+      "label": "PHYS 7A, 7B, 7C, 7D, 7L",
+      "tree": {
+       "t": "and",
+       "kids": [
+        {
+         "t": "course",
+         "code": "PHYS 7A"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7B"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7C"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7D"
+        },
+        {
+         "t": "course",
+         "code": "PHYS 7L"
+        }
+       ]
+      },
+      "units": 16
+     }
+    ]
+   },
+   {
+    "id": "upper",
+    "name": "Upper division major",
+    "requirements": [
+     {
+      "label": "CMPSC 130A",
+      "tree": {
+       "t": "course",
+       "code": "CMPSC 130A"
+      },
+      "units": 4
+     },
+     {
+      "label": "ECE 139",
+      "tree": {
+       "t": "course",
+       "code": "ECE 139"
+      },
+      "units": 4
+     },
+     {
+      "label": "ECE 152A",
+      "tree": {
+       "t": "course",
+       "code": "ECE 152A"
+      },
+      "units": 5
+     },
+     {
+      "label": "ECE 154A",
+      "tree": {
+       "t": "course",
+       "code": "ECE 154A"
+      },
+      "units": 4
+     },
+     {
+      "label": "ENGR 101",
+      "tree": {
+       "t": "course",
+       "code": "ENGR 101"
+      },
+      "units": 3,
+      "note": "May be taken any quarter of senior year."
+     },
+     {
+      "label": "Capstone: CMPSC 189A-B or ECE 189A-B-C",
+      "tree": {
+       "t": "or",
+       "kids": [
+        {
+         "t": "and",
+         "kids": [
+          {
+           "t": "course",
+           "code": "CMPSC 189A"
+          },
+          {
+           "t": "course",
+           "code": "CMPSC 189B"
+          }
+         ]
+        },
+        {
+         "t": "and",
+         "kids": [
+          {
+           "t": "course",
+           "code": "ECE 189A"
+          },
+          {
+           "t": "course",
+           "code": "ECE 189B"
+          },
+          {
+           "t": "course",
+           "code": "ECE 189C"
+          }
+         ]
+        }
+       ]
+      },
+      "units": 8,
+      "note": "CMPSC 156 is the prerequisite for CMPSC 189A; ECE 153B is the prerequisite for ECE 189A."
+     }
+    ]
+   }
+  ],
+  "electives": {
+   "name": "Computer Engineering electives",
+   "min_units": 36,
+   "note": "Must include at least two approved sequences. ECE/CMPSC 192 and 196 count for at most 4 units combined. ECE 194 special topics also count but are not listed in this app.",
+   "codes": [
+    "CMPSC 130B",
+    "CMPSC 138",
+    "CMPSC 153A",
+    "CMPSC 156",
+    "CMPSC 160",
+    "CMPSC 162",
+    "CMPSC 165A",
+    "CMPSC 165B",
+    "CMPSC 170",
+    "CMPSC 171",
+    "CMPSC 174A",
+    "CMPSC 176A",
+    "CMPSC 176B",
+    "CMPSC 176C",
+    "CMPSC 177",
+    "CMPSC 178",
+    "CMPSC 181",
+    "ECE 122A",
+    "ECE 122B",
+    "ECE 123",
+    "ECE 130A",
+    "ECE 130B",
+    "ECE 130C",
+    "ECE 133",
+    "ECE 147A",
+    "ECE 147B",
+    "ECE 148",
+    "ECE 149",
+    "ECE 150",
+    "ECE 152B",
+    "ECE 153A",
+    "ECE 153B",
+    "ECE 154B",
+    "ECE 157A",
+    "ECE 157B",
+    "ECE 157C",
+    "ECE 160",
+    "ECE 178",
+    "ECE 179D",
+    "ECE 179P",
+    "ECE 180",
+    "ECE 181",
+    "ECE 184",
+    "ECE 186"
+   ]
+  },
+  "depth": {
+   "name": "Senior elective sequences",
+   "min_complete": 2,
+   "label": "sequence",
+   "note": "Two sequence topics, at least two courses in each.",
+   "source_url": "https://www.ce.ucsb.edu/undergrad/curriculum/senior-elective-sequences",
+   "items": [
+    {
+     "name": "Computer Networks",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "CMPSC 176A"
+        ],
+        [
+         "CMPSC 176B",
+         "CMPSC 176C"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Computer Systems Design",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 153A",
+         "CMPSC 153A"
+        ],
+        [
+         "ECE 153B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Design and Test Automation",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 157A"
+        ],
+        [
+         "ECE 157B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Distributed Systems",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "CMPSC 171"
+        ]
+       ]
+      },
+      {
+       "kind": "atLeast",
+       "n": 1,
+       "options": [
+        [
+         "CMPSC 176A"
+        ],
+        [
+         "CMPSC 176B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Machine Learning",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "CMPSC 165A"
+        ],
+        [
+         "CMPSC 165B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Multimedia",
+     "rules": [
+      {
+       "kind": "atLeast",
+       "n": 2,
+       "options": [
+        [
+         "ECE 180"
+        ],
+        [
+         "ECE 178"
+        ],
+        [
+         "ECE 181",
+         "CMPSC 181"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Programming Languages",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "CMPSC 160"
+        ],
+        [
+         "CMPSC 162"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Real-Time Computing & Control",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 147A"
+        ],
+        [
+         "ECE 147B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Robotics",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 179D"
+        ],
+        [
+         "ECE 179P"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Signals and Systems",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 130A"
+        ],
+        [
+         "ECE 130B"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "System Software Architecture",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "CMPSC 170"
+        ],
+        [
+         "CMPSC 171"
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "name": "Very Large Scale Integration (VLSI)",
+     "rules": [
+      {
+       "kind": "all",
+       "options": [
+        [
+         "ECE 122A",
+         "ECE 123"
+        ],
+        [
+         "ECE 122B"
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

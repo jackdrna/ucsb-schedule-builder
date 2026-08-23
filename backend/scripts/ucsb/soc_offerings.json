@@ -1,0 +1,7538 @@
+{
+ "ECE 3": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 5": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 10A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 10AL": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 10C": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 10CL": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 15A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 92": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 96": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 122A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 130A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 132": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 133": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 134": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 136A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 145A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 146A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 147A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 153A": {
+  "quarters": {
+   "20244": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 153B": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 154A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 157A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 162A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 178": {
+  "quarters": {
+   "20244": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 179D": {
+  "quarters": {
+   "20244": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 181": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 188A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 189A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 192": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 193": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 194BB": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 194P": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 196": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 1A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 10B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 10BL": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 120A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 122B": {
+  "quarters": {
+   "20251": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 130B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 136B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 137A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 141A": {
+  "quarters": {
+   "20251": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 142": {
+  "quarters": {
+   "20251": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 144": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 145B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 146B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 147B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 149": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 152A": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 157B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 162B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 186": {
+  "quarters": {
+   "20251": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 188B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 189B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 194Q": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 1B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 6": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 120B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 130C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 135": {
+  "quarters": {
+   "20252": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 136C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 137B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 139": {
+  "quarters": {
+   "20252": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 141B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 145C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 147C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 148": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 154B": {
+  "quarters": {
+   "20252": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 158": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 162C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 179P": {
+  "quarters": {
+   "20252": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 180": {
+  "quarters": {
+   "20252": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 183": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 184": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 188C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 189C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 194T": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 152B": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 194A": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ECE 157C": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 5A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 8": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 9": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 16": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 24": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 32": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 40": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 99": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 110": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 111": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 130A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 130B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 138": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 153A": {
+  "quarters": {
+   "20244": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 156": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 160": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 165A": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 171": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 177": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 180": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 181": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 184": {
+  "quarters": {
+   "20244": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 189A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190DD": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190H": {
+  "quarters": {
+   "20244": true,
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190I": {
+  "quarters": {
+   "20244": true,
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190N": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 192": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 193": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 196": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 64": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 140": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 148": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 154": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 162": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 170": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 176A": {
+  "quarters": {
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 178": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 185": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 189B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190DE": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190G": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 196B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 134": {
+  "quarters": {
+   "20252": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 165B": {
+  "quarters": {
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 174A": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 174B": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 176C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190A": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190DF": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 190J": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 132": {
+  "quarters": {
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CMPSC 5B": {
+  "quarters": {
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 2A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 3A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 3B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 4A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 4B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 6A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 6B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 8": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 34A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 34B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 94": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 102A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 104A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 108A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 108B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 111A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 113": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 117": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 118A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 119A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120FC": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120FN": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 121": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 128": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 137A": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 191": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 193": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 197A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 197B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 199RA": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 2B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 101A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 101A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 102B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 104B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 108A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 111B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 115A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 116": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 118B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 119B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120FT": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120NT": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 122A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 122A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 124A": {
+  "quarters": {
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 132A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 190PS": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 199": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 101B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 101B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 104C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 108B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 108C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 111C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 115B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 117": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 118C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120DA": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 122B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 122B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 124B": {
+  "quarters": {
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 132B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 145": {
+  "quarters": {
+   "20252": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 147A": {
+  "quarters": {
+   "20252": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 182": {
+  "quarters": {
+   "20252": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 5": {
+  "quarters": {
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 34LA": {
+  "quarters": {
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 34LB": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120AI": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 190": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 190AI": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120KT": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH 147B": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATH CS 120BC": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 5": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 6A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 6AL": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 6C": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 6CL": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 7B": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 7C": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 7L": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 8": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 13AL": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 15A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 20AL": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 21": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 23": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 24": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 31": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 34": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 98": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 99": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 100A": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 103": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 110A": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 110B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 115A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 115C": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 119A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 120": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 123A": {
+  "quarters": {
+   "20244": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 127AL": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 128AL": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 134L": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 141": {
+  "quarters": {
+   "20244": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 142L": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 143L": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 144L": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 145L": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 150": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 198": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 6B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 6BL": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 7A": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 7D": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 13BL": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 15B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 20BL": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 22": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 25": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 29": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 32": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 35": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 100B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 104": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 115B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 119B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 123B": {
+  "quarters": {
+   "20251": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 127BL": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 129L": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 132": {
+  "quarters": {
+   "20251": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 135": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 136": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 140VA": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 199": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 199RA": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 5": {
+  "quarters": {
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 5L": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 13CL": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 15C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 20CL": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 33": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS CS 36": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 106": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 125": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 131": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 133": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 180": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 118": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 126L": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 137": {
+  "quarters": {
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 138": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 139": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PHYS 186": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 1A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 1BL": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 1C": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 3A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 6AL": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 6BH": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 6BL": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 6CH": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 6CL": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM CS 11A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 25": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 99": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 102": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 104": {
+  "quarters": {
+   "20244": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 109A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 109C": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 110L": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 111": {
+  "quarters": {
+   "20244": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 112A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 113A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 115A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 116CL": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 118": {
+  "quarters": {
+   "20244": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 129": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 130A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 134": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 142A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 143": {
+  "quarters": {
+   "20244": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 150": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 162A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 163": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 173A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 183": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 193": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 1B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 2AL": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 3B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM CS 11B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 109B": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM W 109C": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 112B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 113B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 116AL": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 117A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 123": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 125L": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 126": {
+  "quarters": {
+   "20251": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 130B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 141": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 142B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 162B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 173B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 184": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 186": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 196": {
+  "quarters": {
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 198": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM CS 199": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 2BL": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 3C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM CS 11C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 94": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 112C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 112L": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 113C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 115B": {
+  "quarters": {
+   "20252": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 115C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 116BL": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 127": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 130C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 132": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 142C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 145": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 151": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 175": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 181": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 192": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 194": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 3L": {
+  "quarters": {
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 113AL": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 114A": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 124": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 128": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 133": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 149": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 147": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 153": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM 161": {
+  "quarters": {
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM CS 5": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "CHEM W 142A": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 3": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 13A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 99": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 101": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 195A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 13B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 195B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR 195C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ENGR W 3": {
+  "quarters": {
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 1": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 1E": {
+  "quarters": {
+   "20244": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 2": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 2E": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT W 6R": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105C": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105CD": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105CH": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105CR": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105G": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105M": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105PD": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105PS": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105R": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105S": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105SW": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105WE": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107DJ": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107G": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107J": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107L": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107M": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107T": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109CS": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109ED": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109F": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109HP": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109HU": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109SS": {
+  "quarters": {
+   "20244": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109ST": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109V": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 124": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 131A": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 160": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 199RA": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 50": {
+  "quarters": {
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 50E": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 99": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105CW": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107EP": {
+  "quarters": {
+   "20251": true,
+   "20254": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT W 107WC": {
+  "quarters": {
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 131B": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 151A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 152A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 153A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 155A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 157A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 159A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 109GS": {
+  "quarters": {
+   "20252": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 131C": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 150": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 151B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 152B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 153B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 155B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 157B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 159B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 161": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105P": {
+  "quarters": {
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT W 107B": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 131": {
+  "quarters": {
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 20": {
+  "quarters": {
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105SO": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 107P": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "WRIT 105AI": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 5A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 5H": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 5LS": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 8": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 10": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 100": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 115": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 120A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 120B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 120C": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 122": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 126": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 127": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 130": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 131": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 134": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 160A": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 160B": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 170": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 171": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 173": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 174": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20254": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 182T": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 190": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 193": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "LING 3A": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "LING 3B": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "LING W 3B": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 99": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 105": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 172A": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTATW 174": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 197B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 199": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 135": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 172B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 175": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 176": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 177": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 183": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 197C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 197A": {
+  "quarters": {
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 194CS": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "PSTAT 132": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 11": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 12S": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 14": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 17": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 18": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 95": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 97": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 99": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 100": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 103": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 105": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 107": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 112": {
+  "quarters": {
+   "20244": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125TB": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125TD": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 128": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 140A": {
+  "quarters": {
+   "20244": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 151A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 152A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 154": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 156A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 157": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 158": {
+  "quarters": {
+   "20244": true,
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 167": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 179D": {
+  "quarters": {
+   "20244": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 179L": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 185": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 189A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 193": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 197": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 6": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 12": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 15": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 108": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125ED": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125EH": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125FA": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125KF": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125RM": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 127": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 135": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 141A": {
+  "quarters": {
+   "20251": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 151B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 152B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 156B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 159": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 163": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 186A": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 189B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 10": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 13": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 16": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 104": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 110": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125MV": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125YV": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 129": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 134": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 141B": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 151C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 153": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 155A": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 155C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 166": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME W 167": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 169": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 179P": {
+  "quarters": {
+   "20252": true,
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 180": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 186B": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 189C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125JS": {
+  "quarters": {
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125OK": {
+  "quarters": {
+   "20254": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125RA": {
+  "quarters": {
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125YZ": {
+  "quarters": {
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 102": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125MC": {
+  "quarters": {
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125BM": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "ME 125CV": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 100A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 162A": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 185": {
+  "quarters": {
+   "20244": true,
+   "20254": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 100B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 101": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 135": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 162B": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 186A": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 10": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 100C": {
+  "quarters": {
+   "20252": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 160": {
+  "quarters": {
+   "20252": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "MATRL 186B": {
+  "quarters": {
+   "20252": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 120": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 122": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 124": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 127": {
+  "quarters": {
+   "20244": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 199": {
+  "quarters": {
+   "20244": true,
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 125": {
+  "quarters": {
+   "20251": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 149": {
+  "quarters": {
+   "20251": true,
+   "20261": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 191FM": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 191L": {
+  "quarters": {
+   "20251": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 191VC": {
+  "quarters": {
+   "20251": true,
+   "20252": true,
+   "20254": true,
+   "20261": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 191N": {
+  "quarters": {
+   "20252": true,
+   "20254": true,
+   "20262": true,
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 191AI": {
+  "quarters": {
+   "20254": true,
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 191SP": {
+  "quarters": {
+   "20262": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ },
+ "TMP 191SI": {
+  "quarters": {
+   "20264": true
+  },
+  "title": "",
+  "units": "",
+  "prereq": "",
+  "description": "",
+  "college": ""
+ }
+}

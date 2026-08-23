@@ -1,0 +1,182 @@
+.master-page {
+  min-height: 100vh;
+  /* Added 80px top padding so the grid starts cleanly below the floating notch */
+  padding: 80px var(--spacing-lg) var(--spacing-lg); 
+  background-color: var(--cream-bg);
+  position: relative;
+}
+
+/* The iPhone-style Bezel/Notch */
+.master-nav-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-xl);
+  background-color: var(--navy);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 4px 14px rgba(0, 54, 96, 0.35);
+  z-index: 100;
+}
+
+.master-nav-notch a {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.master-nav-notch a:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  color: white;
+}
+
+.master-nav-notch a.active {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+/* Header and provenance --------------------------------------------------- */
+
+.directory-header {
+  max-width: 900px;
+  margin-bottom: var(--spacing-lg);
+}
+
+.directory-header h1 {
+  font-size: 1.6rem;
+  margin-bottom: var(--spacing-sm);
+}
+
+.directory-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Filters ----------------------------------------------------------------- */
+
+.directory-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding-bottom: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.directory-controls .course-search {
+  flex: 1 1 260px;
+  min-width: 200px;
+  max-width: 380px;
+  font-family: var(--font-sans);
+  font-size: 0.88rem;
+  padding: 7px 12px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+}
+
+.directory-controls .course-search:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.directory-controls .subject-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.directory-controls .subject-chip {
+  font-size: 0.74rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border-light);
+  background: transparent;
+  color: var(--text-secondary);
+}
+
+.directory-controls .subject-chip.active {
+  background-color: rgba(52, 152, 219, 0.15);
+  border-color: #3498db;
+  color: #2980b9;
+}
+
+.directory-controls .result-count {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* Card grid --------------------------------------------------------------- */
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+  align-items: start;
+}
+
+.courses-container .course-card {
+  max-width: 100%;
+  cursor: default;
+}
+
+.courses-container .course-card:hover {
+  transform: none;
+}
+
+.error-banner {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  border-left: 4px solid var(--error-text);
+}
+
+@media (max-width: 1024px) {
+  .courses-container {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--spacing-md);
+  }
+}
+
+@media (max-width: 768px) {
+  .master-page {
+    /* Adjusted padding for mobile */
+    padding: 80px var(--spacing-md) var(--spacing-md);
+  }
+
+  .courses-container {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+
+  .directory-controls .result-count {
+    margin-left: 0;
+  }
+
+  /* Make the notch fit better on small screens */
+  .master-nav-notch {
+    width: 90%;
+    justify-content: center;
+    padding: var(--spacing-sm) var(--spacing-sm);
+  }
+}
+
+@media (max-width: 480px) {
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+}

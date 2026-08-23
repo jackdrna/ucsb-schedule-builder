@@ -1,0 +1,234 @@
+/* Global Styles for Schedule Builder */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Color Palette */
+  --cream-bg: #ffffff;
+  --text-primary: #2c3e50;
+  --text-secondary: #7f8c8d;
+  --border-light: #e8dcc8;
+  --warning-bg: #fff3cd;
+  --warning-text: #856404;
+  --error-bg: #f8d7da;
+  --error-text: #721c24;
+  --info-bg: #e1effc;
+  --info-text: #12456f;
+
+  /* Blues, from the UCSB navy down to the header tint */
+  --navy: #003660;          /* UCSB navy -- top bezel */
+  --navy-hover: #0a4a7d;
+  --header-blue: #d6e4f2;   /* lighter blue -- stat header and the sidebar */
+  --header-blue-line: #b3cce4;
+  --header-blue-btn: #bcd4e9;
+  --column-blue: #eaf2f9;   /* alternating quarter columns */
+
+  /* Pastel Colors for Course Cards */
+  --pastel-1: #ffcccc; /* Light red */
+  --pastel-2: #ccffcc; /* Light green */
+  --pastel-3: #ccccff; /* Light blue */
+  --pastel-4: #ffffcc; /* Light yellow */
+  --pastel-5: #ffccff; /* Light magenta */
+  --pastel-6: #ccffff; /* Light cyan */
+  --pastel-7: #ffddcc; /* Light orange */
+  --pastel-8: #e6ccff; /* Light purple */
+
+  /* Font Stack */
+  --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
+
+  /* Spacing */
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 48px;
+
+  /* Border Radius */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--cream-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Strongly enforces no horizontal scrolling */
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  max-width: none !important; /* KILLS Vite's default 1280px constraint */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Ensures the #root passes its full height/width to your app */
+  flex-direction: column;
+}
+
+/* Typography */
+h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg);
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-md);
+}
+
+h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* Links */
+a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
+/* Buttons */
+button {
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all 0.2s;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: 0.95rem;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Course Card Base */
+.course-card {
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  border: 2px solid;
+  background-color: white;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s;
+  cursor: grab;
+}
+
+.course-card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.course-card:active {
+  cursor: grabbing;
+}
+
+.course-card.pastel-1 {
+  border-color: var(--pastel-1);
+}
+.course-card.pastel-2 {
+  border-color: var(--pastel-2);
+}
+.course-card.pastel-3 {
+  border-color: var(--pastel-3);
+}
+.course-card.pastel-4 {
+  border-color: var(--pastel-4);
+}
+.course-card.pastel-5 {
+  border-color: var(--pastel-5);
+}
+.course-card.pastel-6 {
+  border-color: var(--pastel-6);
+}
+.course-card.pastel-7 {
+  border-color: var(--pastel-7);
+}
+.course-card.pastel-8 {
+  border-color: var(--pastel-8);
+}
+
+/* Warning Banner */
+.warning-banner {
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+  border-left: 4px solid var(--warning-text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.warning-banner.error {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+  border-left-color: var(--error-text);
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.25rem;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+/* Loading and Empty States */
+.loading {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--text-secondary);
+}
+
+.empty-state {
+  text-align: center;
+  padding: var(--spacing-2xl);
+  color: var(--text-secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+}

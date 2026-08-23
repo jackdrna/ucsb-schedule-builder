@@ -1,0 +1,6 @@
+# Raw scrape intermediates -- regenerate with fetch_catalog.py, they are large.
+catalog_*.json
+
+# Outputs now go straight to backend/data/.
+courses.json
+requirements.json

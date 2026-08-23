@@ -1,0 +1,205 @@
+/* Floating "?" -------------------------------------------------------------- */
+
+/*
+ * Fixed by default, which is what the scrolling course directory wants. Inside the
+ * schedule builder it is re-anchored to the layout box (see ScheduleBuilder.css) so
+ * it sits above the bottom dock instead of on top of it.
+ */
+.help-fab {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 300;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--navy);
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  box-shadow: 0 4px 12px rgba(0, 54, 96, 0.4);
+  transition: background-color 0.15s, transform 0.15s;
+}
+
+.help-fab:hover {
+  background-color: var(--navy-hover);
+  transform: scale(1.08);
+}
+
+.help-fab:focus-visible {
+  outline: 3px solid var(--header-blue-btn);
+  outline-offset: 2px;
+}
+
+/* Dialog -------------------------------------------------------------------- */
+
+.help-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 400;
+  background: rgba(0, 20, 38, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--spacing-lg);
+  animation: helpFade 0.15s ease-out;
+}
+
+.help-panel {
+  width: min(620px, 100%);
+  max-height: min(86vh, 760px);
+  display: flex;
+  flex-direction: column;
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 50px rgba(0, 20, 38, 0.4);
+  text-align: left;
+  overflow: hidden;
+  animation: helpRise 0.2s ease-out;
+}
+
+@keyframes helpFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes helpRise {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.help-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg);
+  background: var(--navy);
+  flex-shrink: 0;
+}
+
+.help-head h2 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.help-close {
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.6rem;
+  line-height: 1;
+  padding: 0 4px;
+  border-radius: var(--radius-sm);
+}
+
+.help-close:hover {
+  color: white;
+}
+
+.help-body {
+  padding: var(--spacing-md) var(--spacing-lg) 0;
+  overflow-y: auto;
+  min-height: 0;
+  font-size: 0.88rem;
+  line-height: 1.5;
+  color: var(--text-primary);
+}
+
+.help-body section {
+  margin-bottom: var(--spacing-md);
+}
+
+.help-body h3 {
+  margin: 0 0 var(--spacing-xs);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.help-body ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.help-body p {
+  margin: var(--spacing-xs) 0 0;
+}
+
+.help-swatch {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  margin-right: 6px;
+  vertical-align: baseline;
+}
+
+.help-swatch.error {
+  background-color: #e74c3c;
+}
+
+.help-swatch.warning {
+  background-color: #d9a406;
+}
+
+.help-caveat {
+  margin: 0 0 var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  background: var(--header-blue);
+  border-left: 3px solid var(--navy);
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  color: #2c4a66;
+}
+
+.help-foot {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-top: 1px solid var(--header-blue-line);
+  background: #f7fafd;
+  flex-shrink: 0;
+}
+
+.help-got-it {
+  background: var(--navy);
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.88rem;
+  padding: 7px 20px;
+}
+
+.help-got-it:hover {
+  background: var(--navy-hover);
+}
+
+.help-reopen-hint {
+  font-size: 0.78rem;
+  color: #5a7692;
+}
+
+@media (max-width: 600px) {
+  .help-backdrop {
+    padding: 0;
+    align-items: flex-end;
+  }
+
+  .help-panel {
+    max-height: 92vh;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

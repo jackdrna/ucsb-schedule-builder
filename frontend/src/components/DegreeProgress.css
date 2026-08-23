@@ -1,0 +1,217 @@
+.degree-panel {
+  flex-shrink: 0;
+  border-top: 1px solid var(--border-light);
+  background: white;
+  text-align: left;
+}
+
+/* Header row -------------------------------------------------------------- */
+
+.degree-head {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+  padding: var(--spacing-sm) var(--spacing-lg);
+}
+
+.degree-toggle {
+  background: transparent;
+  border: none;
+  padding: 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.degree-caret {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.degree-selector {
+  display: flex;
+  gap: 4px;
+}
+
+.degree-summary {
+  display: flex;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.degree-pill {
+  font-size: 0.75rem;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.degree-pill strong {
+  font-weight: 700;
+}
+
+.degree-pill.met {
+  background-color: #eaf7ef;
+  border-color: #b7e0c6;
+  color: #1e6b3a;
+}
+
+.degree-pill.unmet {
+  background-color: #f4f4f4;
+  border-color: var(--border-light);
+  color: var(--text-secondary);
+}
+
+/* Body -------------------------------------------------------------------- */
+
+.degree-body {
+  max-height: 42vh;
+  overflow-y: auto;
+  padding: 0 var(--spacing-lg) var(--spacing-md);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: var(--spacing-md) var(--spacing-xl);
+  align-items: start;
+}
+
+.degree-provenance {
+  grid-column: 1 / -1;
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  margin: 0 0 var(--spacing-xs);
+  line-height: 1.4;
+}
+
+.degree-group h4 {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  margin: 0 0 4px;
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-sm);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 2px;
+}
+
+.degree-count {
+  margin-left: auto;
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--text-primary);
+}
+
+.degree-list {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Flex-wrap rather than fixed columns: a short row ("ECE 139  4 units") stays on
+   one line, while a long one ("Capstone: CMPSC 189A-B or ECE 189A-B-C  needs ...")
+   wraps its detail onto the next line instead of into a 60px column. */
+.degree-list li,
+.degree-inline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0 var(--spacing-sm);
+  font-size: 0.78rem;
+  line-height: 1.4;
+  padding: 2px 0;
+  margin: 0;
+}
+
+.degree-mark {
+  font-weight: 700;
+  flex: 0 0 14px;
+  text-align: center;
+}
+
+.degree-list li.met .degree-mark,
+.degree-inline.met .degree-mark {
+  color: #1e8449;
+}
+
+.degree-list li.partial .degree-mark {
+  color: #d9a406;
+}
+
+.degree-list li.unmet .degree-mark,
+.degree-list li.untouched .degree-mark,
+.degree-inline.unmet .degree-mark {
+  color: var(--text-secondary);
+}
+
+.degree-label {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.degree-list li.untouched .degree-label {
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+.degree-detail {
+  color: var(--text-secondary);
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+.degree-list li.unmet .degree-detail {
+  color: #a94442;
+}
+
+.degree-note {
+  font-size: 0.7rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.35;
+  margin: 4px 0 0;
+}
+
+.degree-tracks li.untouched {
+  opacity: 0.75;
+}
+
+/* Track names plus their "add X / Y / Z" hints are long enough that the detail
+   always reads better on its own line. */
+.degree-tracks li {
+  padding: 3px 0;
+}
+
+.degree-tracks .degree-detail {
+  flex: 1 0 100%;
+  padding-left: calc(14px + var(--spacing-sm));
+}
+
+.degree-body::-webkit-scrollbar {
+  width: 8px;
+}
+
+.degree-body::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+@media (max-width: 900px) {
+  .degree-body {
+    max-height: none;
+    grid-template-columns: 1fr;
+  }
+
+  .degree-summary {
+    margin-left: 0;
+  }
+}

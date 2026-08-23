@@ -1,0 +1,645 @@
+.schedule-builder {
+  /* Narrowest a quarter column may get before the grid scrolls sideways. */
+  --summer-col-min: 360px;
+  height: 100vh;
+  background-color: var(--cream-bg);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating navigation notch ------------------------------------------------ */
+
+.schedule-nav-notch {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-xl);
+  background-color: var(--navy);
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  box-shadow: 0 4px 14px rgba(0, 54, 96, 0.35);
+  z-index: 100;
+}
+
+.schedule-nav-notch a {
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.72);
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.schedule-nav-notch a:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  color: white;
+}
+
+.schedule-nav-notch a.active {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: white;
+}
+
+/* Plan status bar --------------------------------------------------------- */
+
+.plan-status {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm) var(--spacing-lg);
+  padding: var(--spacing-sm) var(--spacing-lg);
+  border-bottom: 1px solid var(--header-blue-line);
+  background: var(--header-blue);
+  flex-shrink: 0;
+  font-size: 0.85rem;
+  color: #3d5a75;
+}
+
+.plan-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-lg);
+  flex-wrap: wrap;
+}
+
+/*
+ * The nav notch is centred and floats over this bar, so the middle of row one
+ * has to stay empty. This spacer grows to fill but never shrinks below the
+ * notch's width, which pushes the actions clear of it -- and once the row runs
+ * out of space the actions wrap onto a second line rather than sliding under.
+ */
+.notch-spacer {
+  flex: 1 0 420px;
+}
+
+.plan-stat strong {
+  color: var(--navy);
+  font-size: 1rem;
+  margin-right: 4px;
+}
+
+.plan-stat.good strong {
+  color: #1e8449;
+}
+
+.plan-stat.bad strong {
+  color: #a52128;
+}
+
+/* Darker than the usual amber: it is 16px bold on the blue bar, which WCAG counts
+   as body text, so it needs the full 4.5 ratio. */
+.plan-stat.warn strong {
+  color: #6f4e00;
+}
+
+/* Actions ----------------------------------------------------------------- */
+
+.plan-actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.plan-btn,
+.plan-clear,
+.plan-summer-toggle {
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid var(--header-blue-btn);
+  color: var(--navy);
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  white-space: nowrap;
+}
+
+.plan-btn:hover:not(:disabled),
+.plan-summer-toggle:hover {
+  background: white;
+  border-color: var(--navy);
+}
+
+.plan-clear:hover:not(:disabled) {
+  background: white;
+  border-color: #a52128;
+  color: #a52128;
+}
+
+.plan-summer-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Fills solid navy when Summer is showing. */
+.plan-summer-toggle.open {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.plan-summer-toggle.open:hover {
+  background: var(--navy-hover);
+  border-color: var(--navy-hover);
+}
+
+.summer-caret {
+  font-size: 0.62rem;
+  line-height: 1;
+}
+
+/* Drop notice ------------------------------------------------------------- */
+
+.drop-notice {
+  position: absolute;
+  top: 64px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 120;
+  max-width: min(680px, 90vw);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--spacing-md);
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  font-size: 0.88rem;
+  line-height: 1.4;
+  animation: dropNoticeIn 0.2s ease-out;
+}
+
+.drop-notice.error {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+  border-left: 4px solid var(--error-text);
+}
+
+.drop-notice.warning {
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+  border-left: 4px solid var(--warning-text);
+}
+
+.drop-notice.info {
+  background-color: var(--info-bg);
+  color: var(--info-text);
+  border-left: 4px solid var(--navy);
+}
+
+/* The waiver offered by a refused drop. Reads as part of the sentence, so it is
+   an inline link rather than another button competing with the dismiss control. */
+.notice-waive {
+  margin-left: 8px;
+  padding: 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  border-radius: 0;
+  font-size: inherit;
+  font-weight: 700;
+  color: inherit;
+}
+
+.notice-waive:hover {
+  opacity: 0.72;
+}
+
+@keyframes dropNoticeIn {
+  from { opacity: 0; transform: translate(-50%, -12px); }
+  to   { opacity: 1; transform: translate(-50%, 0); }
+}
+
+/* Layout ------------------------------------------------------------------ */
+
+.schedule-layout {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  position: relative;   /* anchors the floating help button */
+}
+
+/*
+ * Re-anchor the help button to the layout box rather than the viewport, so it stays
+ * clear of the bottom dock however tall the dock happens to be. The offset also
+ * clears the horizontal scrollbar that appears when Summer is showing.
+ */
+.schedule-layout .help-fab {
+  position: absolute;
+  right: 18px;
+  bottom: 24px;
+}
+
+/* Sidebar ----------------------------------------------------------------- */
+
+/* The sidebar runs light blue throughout, with white course cards on top of it. */
+.sidebar {
+  width: 330px;
+  flex-shrink: 0;
+  background-color: var(--header-blue);
+  border-right: 1px solid var(--header-blue-line);
+  display: flex;
+  flex-direction: column;
+  transition: width 0.25s ease;
+  z-index: 20;
+}
+
+.sidebar.closed {
+  width: 46px;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--header-blue);
+  border-bottom: 1px solid var(--header-blue-line);
+  flex-shrink: 0;
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--navy);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.toggle-btn {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  color: #3d5a75;
+  padding: var(--spacing-xs);
+  flex-shrink: 0;
+}
+
+.toggle-btn:hover {
+  color: var(--navy);
+}
+
+.sidebar-filters {
+  padding: var(--spacing-sm) var(--spacing-md);
+  background-color: var(--header-blue);
+  border-bottom: 1px solid var(--header-blue-line);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  flex-shrink: 0;
+}
+
+.course-search {
+  width: 100%;
+  font-family: var(--font-sans);
+  font-size: 0.85rem;
+  padding: 6px 10px;
+  background-color: white;
+  border: 1px solid var(--header-blue-btn);
+  border-radius: var(--radius-md);
+  color: var(--text-primary);
+}
+
+.course-search:focus {
+  outline: none;
+  border-color: var(--navy);
+}
+
+.subject-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.subject-chip {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--header-blue-btn);
+  background: rgba(255, 255, 255, 0.6);
+  color: #3d5a75;
+}
+
+.subject-chip:hover {
+  background: white;
+  border-color: var(--navy);
+}
+
+.subject-chip.active {
+  background-color: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.result-count {
+  font-size: 0.72rem;
+  color: #3d5a75;
+}
+
+.sidebar-content {
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+  padding: var(--spacing-md);
+  background-color: var(--header-blue);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+/* Dropping here removes a course from the plan, hence the red tint. */
+.sidebar-content.dragging-over {
+  background-color: rgba(231, 76, 60, 0.1);
+}
+
+.sidebar.closed .sidebar-content,
+.sidebar.closed .sidebar-filters {
+  display: none;
+}
+
+.empty-message {
+  text-align: center;
+  color: var(--text-secondary);
+  padding: var(--spacing-lg);
+  margin: 0;
+  font-size: 0.85rem;
+}
+
+/* "No courses match." sits on the blue well, where the grey secondary is too faint. */
+.sidebar-content .empty-message {
+  color: #3d5a75;
+}
+
+/* Year rows --------------------------------------------------------------- */
+
+.schedule-grid {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding: var(--spacing-md) var(--spacing-lg) var(--spacing-2xl);
+  gap: var(--spacing-md);
+}
+
+.year-section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+}
+
+.year-header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--spacing-md);
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 2px;
+}
+
+.year-header h2 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.year-units {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.year-quarters {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--spacing-md);
+  align-items: start;
+}
+
+.quarter-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  min-height: 120px;
+  transition: background-color 0.2s;
+}
+
+/* Alternating column tint, so it is obvious which quarter a card sits in. */
+.quarter-column:nth-child(odd) {
+  background-color: var(--column-blue);
+}
+
+/* Summer is appended after the academic year, not part of it. */
+.quarter-column.summer {
+  border-left: 1px dashed var(--header-blue-line);
+}
+
+.quarter-column.dragging-over {
+  background-color: rgba(52, 152, 219, 0.12);
+}
+
+/*
+ * Summer expanded. Adding a fourth column must not shrink the cards, so each
+ * column keeps a readable floor and the grid runs wider than the viewport
+ * instead -- which is what puts a single horizontal scrollbar along the bottom.
+ * On a display wide enough for four full columns the 1fr takes over and there is
+ * nothing to scroll, which is the right answer for that screen.
+ */
+.schedule-grid.summer-open {
+  overflow-x: auto;
+}
+
+.schedule-grid.summer-open .year-quarters {
+  grid-template-columns: repeat(4, minmax(var(--summer-col-min), 1fr));
+}
+
+/* Keeps the year heading and its rule as wide as the columns it labels. */
+.schedule-grid.summer-open .year-section {
+  min-width: min-content;
+}
+
+.quarter-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.quarter-title {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.quarter-units {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+}
+
+.quarter-slot {
+  position: relative;
+  border-radius: var(--radius-md);
+}
+
+.quarter-slot.filled .course-card {
+  width: 100%;
+  max-width: 100%;
+}
+
+.quarter-slot.empty-slot {
+  border: 2px dashed var(--border-light);
+  min-height: 54px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 0.78rem;
+  transition: all 0.2s;
+}
+
+.quarter-slot.empty-slot p {
+  margin: 0;
+}
+
+.quarter-slot.empty-slot:hover {
+  border-color: #3498db;
+  background-color: rgba(52, 152, 219, 0.05);
+}
+
+.remove-btn {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgba(231, 76, 60, 0.92);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  line-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity 0.15s, transform 0.15s;
+}
+
+.quarter-slot.filled:hover .remove-btn {
+  opacity: 1;
+}
+
+.remove-btn:hover {
+  background-color: #e74c3c;
+  transform: scale(1.12);
+}
+
+/* Scrollbars -------------------------------------------------------------- */
+
+.sidebar-content::-webkit-scrollbar,
+.schedule-grid::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;   /* the horizontal bar Summer brings in */
+}
+
+/* With Summer open the horizontal bar is a primary control, so give it presence. */
+.schedule-grid.summer-open::-webkit-scrollbar:horizontal {
+  height: 12px;
+}
+
+.schedule-grid.summer-open::-webkit-scrollbar-thumb:horizontal {
+  background: #9bb3c9;
+  border: 2px solid transparent;
+  background-clip: content-box;
+}
+
+.schedule-grid.summer-open::-webkit-scrollbar-thumb:horizontal:hover {
+  background: var(--navy);
+  background-clip: content-box;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb,
+.schedule-grid::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+.sidebar-content::-webkit-scrollbar-thumb:hover,
+.schedule-grid::-webkit-scrollbar-thumb:hover {
+  background: #999;
+}
+
+
+/* Responsive -------------------------------------------------------------- */
+
+@media (max-width: 1100px) {
+  /* Too narrow to seat the actions beside the notch, so they take their own row
+     under the stats and the spacer stops reserving width it cannot afford. */
+  .notch-spacer {
+    display: none;
+  }
+
+  .plan-actions {
+    margin-left: 0;
+    flex: 1 1 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 900px) {
+  .schedule-builder {
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
+  }
+
+  .schedule-layout {
+    flex-direction: column;
+    overflow: visible;
+  }
+
+  .sidebar,
+  .sidebar.closed {
+    width: 100%;
+    max-height: 320px;
+    border-right: none;
+    border-bottom: 1px solid var(--header-blue-line);
+  }
+
+  .schedule-grid,
+  .schedule-grid.summer-open {
+    overflow: visible;
+  }
+
+  .year-quarters {
+    grid-template-columns: 1fr;
+  }
+
+  /* One column per row already: nothing to scroll sideways, and no alternation
+     to read, so Summer is just another stacked column. */
+  .schedule-grid.summer-open .year-section,
+  .schedule-grid.summer-open .year-quarters {
+    min-width: 0;
+  }
+
+  .schedule-grid.summer-open .year-quarters {
+    grid-template-columns: 1fr;
+  }
+
+  .quarter-column:nth-child(odd) {
+    background-color: transparent;
+  }
+
+  .quarter-column.summer {
+    border-left: none;
+  }
+}

@@ -1,0 +1,212 @@
+.course-card {
+  min-width: 200px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+  /* index.css centres body text; card content is dense enough to need ranging left. */
+  text-align: left;
+}
+
+.course-card-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+.course-code {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.course-units {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 999px;
+  padding: 1px 6px;
+  white-space: nowrap;
+}
+
+.course-name {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+/* Validation state -------------------------------------------------------- */
+
+.course-card.has-error {
+  border-color: var(--error-text) !important;
+  background-color: #fff7f7;
+}
+
+.course-card.has-warning {
+  border-color: #d9a406 !important;
+  background-color: #fffdf3;
+}
+
+.course-issue {
+  display: flex;
+  gap: var(--spacing-xs);
+  align-items: flex-start;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  border-radius: var(--radius-sm);
+  padding: 4px 6px;
+}
+
+.course-issue.error {
+  background-color: var(--error-bg);
+  color: var(--error-text);
+}
+
+.course-issue.warning {
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+}
+
+.course-issue > span:first-child {
+  font-weight: 700;
+}
+
+/* Prerequisites and quarters ---------------------------------------------- */
+
+.course-prerequisites,
+.course-quarters {
+  padding-top: var(--spacing-xs);
+  border-top: 1px solid var(--border-light);
+}
+
+.prereq-label,
+.quarters-label {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+}
+
+.prereq-text {
+  font-size: 0.78rem;
+  color: var(--text-primary);
+  line-height: 1.35;
+}
+
+.quarters-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-top: 2px;
+}
+
+.quarter-badge {
+  display: inline-block;
+  background-color: var(--text-secondary);
+  color: white;
+  padding: 1px 6px;
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.quarter-badge.tentative {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px dashed var(--text-secondary);
+}
+
+.quarter-badge.tentative-flag,
+.quarter-badge.none {
+  background-color: var(--warning-bg);
+  color: var(--warning-text);
+  font-weight: 600;
+}
+
+/* Detail block (course directory) ----------------------------------------- */
+
+.course-detail {
+  border-top: 1px solid var(--border-light);
+  padding-top: var(--spacing-sm);
+  margin-top: var(--spacing-xs);
+}
+
+.course-description {
+  font-size: 0.78rem;
+  color: var(--text-primary);
+  line-height: 1.4;
+  margin-bottom: var(--spacing-sm);
+}
+
+.course-source-text {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+  margin-bottom: var(--spacing-xs);
+}
+
+.course-provenance {
+  font-style: italic;
+}
+
+/* Compact variant, used inside a schedule slot ---------------------------- */
+
+.course-card.compact {
+  min-width: auto;
+  max-width: 100%;
+  padding: 6px 8px;
+  gap: 2px;
+}
+
+.course-card.compact .course-code {
+  font-size: 0.74rem;
+}
+
+.course-card.compact .course-name {
+  font-size: 0.76rem;
+  font-weight: 600;
+  line-height: 1.25;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.course-card.compact .course-units {
+  font-size: 0.62rem;
+}
+
+.course-card.compact .course-prerequisites,
+.course-card.compact .quarters-label,
+.course-card.compact .course-detail {
+  display: none;
+}
+
+.course-card.compact .course-quarters {
+  border-top: none;
+  padding-top: 2px;
+}
+
+.course-card.compact .quarter-badge {
+  padding: 0 4px;
+  font-size: 0.62rem;
+}
+
+.course-card.compact .course-issue {
+  font-size: 0.66rem;
+  padding: 2px 4px;
+}
+
+.course-card.compact .course-issue > span:last-child {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

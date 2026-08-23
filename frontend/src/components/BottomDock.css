@@ -1,0 +1,129 @@
+.bottom-dock {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  background: white;
+  border-top: 1px solid var(--border-light);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.04);
+  text-align: left;
+}
+
+/* The handle stays put whether open or shut, so the control never moves. */
+
+.dock-handle {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 5px var(--spacing-lg);
+  font-family: var(--font-sans);
+  text-align: left;
+}
+
+.dock-handle:hover {
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.dock-caret {
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  width: 10px;
+}
+
+.dock-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.dock-summary {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  flex-wrap: wrap;
+  margin-left: auto;
+}
+
+.dock-pill {
+  font-size: 0.75rem;
+  padding: 2px 9px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+
+.dock-pill strong {
+  font-weight: 700;
+}
+
+.dock-pill.error {
+  background-color: var(--error-bg);
+  border-color: #e2b6ba;
+  color: var(--error-text);
+}
+
+.dock-pill.warning {
+  background-color: var(--warning-bg);
+  border-color: #e6d08a;
+  color: var(--warning-text);
+}
+
+.dock-pill.clean {
+  background-color: #eaf7ef;
+  border-color: #b7e0c6;
+  color: #1e6b3a;
+}
+
+.dock-pill.neutral {
+  background-color: #f2f4f6;
+  border-color: var(--border-light);
+  color: var(--text-secondary);
+}
+
+/* Panels ------------------------------------------------------------------ */
+
+.dock-panels {
+  min-height: 0;
+  overflow-y: auto;
+  max-height: 55vh;
+  border-top: 1px solid var(--border-light);
+}
+
+/* The panels supply their own top border; the dock already drew one. */
+.dock-panels > *:first-child {
+  border-top: none;
+}
+
+.dock-panels::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dock-panels::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+  border-radius: 10px;
+}
+
+/* Inner panels scroll with the dock rather than each managing its own height. */
+.dock-panels .degree-body,
+.dock-panels .issue-list {
+  max-height: none;
+  overflow-y: visible;
+}
+
+@media (max-width: 900px) {
+  .dock-panels {
+    max-height: none;
+    overflow-y: visible;
+  }
+
+  .dock-title {
+    font-size: 0.7rem;
+  }
+}
