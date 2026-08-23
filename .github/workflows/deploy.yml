@@ -49,7 +49,11 @@ jobs:
         working-directory: frontend
         run: npm run build
 
+      # enablement: true turns Pages on via the API if it is not already enabled,
+      # so a fresh clone or a new repo deploys without a manual Settings visit.
       - uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - uses: actions/upload-pages-artifact@v3
         with:
