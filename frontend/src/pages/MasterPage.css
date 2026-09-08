@@ -95,6 +95,48 @@
   gap: 4px;
 }
 
+/* The mode picks which list is on screen rather than filtering the one already
+   there, so it gets its own row above the facets and a label to say so. */
+.directory-controls .mode-chips {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px;
+  flex-basis: 100%;
+  order: -1;
+}
+
+.directory-controls .control-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  margin-right: var(--spacing-xs);
+}
+
+.directory-controls .mode-chip {
+  padding: 4px 12px;
+}
+
+.directory-controls .mode-chip.active {
+  background-color: var(--navy);
+  border-color: var(--navy);
+  color: white;
+}
+
+.mode-note {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+.mode-note a {
+  color: inherit;
+}
+
 .directory-controls .subject-chip {
   font-size: 0.74rem;
   font-weight: 600;

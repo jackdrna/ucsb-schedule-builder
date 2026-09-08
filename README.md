@@ -38,6 +38,20 @@ Registration restrictions (`open to EE majors only`), class standing, consent of
 instructor and minimum grades are recorded and shown on the course card, but do not
 block scheduling.
 
+## Course directory modes
+
+The directory opens on the whole catalog, but a **Show** row switches it to one
+degree list at a time: `EE required`, `EE electives`, `CE required`, `CE electives`.
+The required lists include the alternatives inside an "or" — `CHEM 1A or 2A or ECE 6`
+puts all three on screen — because the mode is there to show what the degree can be
+built from, not to pick a branch for you. Each list carries its unit minimum and a
+link to the GEAR page it came from.
+
+The modes are generated from the requirements dataset, so a third major appears here
+as soon as it appears in the data. Search, subject and quarter still apply inside the
+chosen list; picking a mode clears the subject filter, so the whole list is visible
+rather than just its ECE half.
+
 ## Prior credit and waivers
 
 Two things the catalog cannot know about you, both editable from the **Prior credit
@@ -232,7 +246,7 @@ schedule-builder/
 │       ├── generate-seed.js
 │       └── ucsb/                    # the UCSB scraping + parsing pipeline
 └── frontend/src/
-    ├── pages/MasterPage.jsx         # course directory
+    ├── pages/MasterPage.jsx         # course directory, degree-list modes
     ├── pages/ScheduleBuilder.jsx    # 4 years x Fall/Winter/Spring(+Summer)
     ├── components/CourseCard.jsx
     ├── components/BottomDock.jsx     # one collapse for all three panels
