@@ -94,6 +94,30 @@ test('no prerequisite tree is impossible to satisfy', () => {
   assert.deepEqual(broken, []);
 });
 
+test('prerequisite trees are published only for the verified subjects', () => {
+  // The parser was written and reviewed against ECE/CMPSC prose. General education
+  // brings in 79 departments it misreads, so those courses keep the catalog
+  // sentence and get no tree -- a wrong tree would refuse a legal plan.
+  const trusted = new Set(['ECE', 'CMPSC', 'MATH', 'PHYS', 'CHEM', 'ENGR',
+    'PSTAT', 'WRIT', 'ME', 'MATRL', 'TMP']);
+  const strays = courses
+    .filter((c) => c.prereq_tree && !trusted.has(c.subject))
+    .map((c) => c.code);
+  assert.deepEqual(strays, []);
+
+  // ENV S 115 is the case that caught this: its catalog text is still shown.
+  const envs = get('ENV S 115');
+  assert.equal(envs.prereq_tree, null);
+  assert.ok(envs.prereq_raw.includes('Environmental Studies 2'));
+  assert.ok(envs.prereq_notes.some((n) => n.includes('does not machine-check')));
+});
+
+test('a course with no tree never blocks a placement', () => {
+  const envs = get('ENV S 115');
+  const check = validatePlacement(envs, 'Y1-Fall', emptySchedule(), catalog);
+  assert.equal(check.allowed, true);
+});
+
 /* ------------------------------------------------------- quarter availability */
 
 test('ECE 154A is Fall-only per the ECE 2026-27 grid', () => {
@@ -752,6 +776,111 @@ test('a full EE plan built to the GEAR sheet satisfies the degree', () => {
     validatePlan(plan, catalog).errors.map((e) => `${e.code}: ${e.message}`),
     []
   );
+});
+
+/* --------------------------------------------------------- general education */
+
+/** The GE panel for a plan of bare course codes. */
+const geOf = (codes, program = 'EE') =>
+  auditDegree(planOf({ 'Y1-Fall': codes.slice(0, 5), 'Y1-Winter': codes.slice(5, 10) }),
+    programOf(program)).generalEducation;
+
+const areaOf = (ge, id) => {
+  const a = ge.areas.find((x) => x.id === id);
+  assert.ok(a, `no GE area ${id}`);
+  return a;
+};
+
+test('both programs carry the College of Engineering GE block', () => {
+  for (const code of ['EE', 'CE']) {
+    const ge = auditDegree(emptySchedule(), programOf(code)).generalEducation;
+    assert.ok(ge, `${code} has no general_education`);
+    assert.equal(ge.areas.length, 9);
+    assert.equal(ge.totalCourses, 8);
+  }
+});
+
+test('the dataset carries enough courses to satisfy every GE area', () => {
+  const ge = auditDegree(emptySchedule(), programOf('EE')).generalEducation;
+  for (const area of ge.areas) {
+    const field = area.kind === 'general' ? 'ge_areas' : 'special_areas';
+    const spec = programOf('EE').general_education.areas.find((a) => a.id === area.id);
+    const n = courses.filter((c) => (c[field] || []).some((t) => spec.tags.includes(t))).length;
+    assert.ok(n >= area.min, `${area.id}: dataset has ${n}, needs ${area.min}`);
+  }
+});
+
+test('an empty plan meets no GE area', () => {
+  const ge = geOf([]);
+  assert.equal(ge.met, false);
+  assert.deepEqual(ge.areas.filter((a) => a.met).map((a) => a.id), []);
+});
+
+test('a course in two general areas fills only one of them', () => {
+  // BL ST 130A is tagged E and G. Counting the areas independently would let it
+  // satisfy both; the GEAR says it applies to only one.
+  assert.deepEqual((get('BL ST 130A').ge_areas || []).slice().sort(), ['E', 'G']);
+  const ge = geOf(['BL ST 130A']);
+  const general = ge.areas.filter((a) => a.kind === 'general');
+  assert.equal(general.reduce((n, a) => n + a.have, 0), 1);
+  assert.equal(areaOf(ge, 'G').met && areaOf(ge, 'E').met, false);
+});
+
+test('three courses in the same two areas fill all three slots', () => {
+  // Area E needs two and Area G one, and all three courses are tagged E+G. Filling
+  // every slot means the matching rehouses earlier picks rather than stopping at
+  // the first course each slot happens to grab.
+  const ge = geOf(['BL ST 130A', 'BL ST 130B', 'C LIT 30A']);
+  assert.equal(areaOf(ge, 'E').have, 2);
+  assert.equal(areaOf(ge, 'G').have, 1);
+  // No course is counted twice.
+  const used = ge.areas.filter((a) => a.kind === 'general').flatMap((a) => a.courses);
+  assert.equal(new Set(used).size, used.length);
+});
+
+test('special subject areas stack with the general area, they do not compete', () => {
+  // ANTH 3 is Area D and carries NWC + WRT. All three count.
+  const ge = geOf(['ANTH 3']);
+  assert.equal(areaOf(ge, 'D').have, 1);
+  assert.equal(areaOf(ge, 'EUR_NWC').met, true);
+  assert.equal(areaOf(ge, 'WRT').have, 1);
+});
+
+test('ENGR 101 counts towards the writing requirement', () => {
+  // Not a Senate GE approval, so the catalog carries no tag; the GEAR grants it
+  // and build_dataset.py records that as a curated override.
+  assert.deepEqual(get('ENGR 101').special_areas, ['WRT']);
+  assert.equal(areaOf(geOf(['ENGR 101']), 'WRT').have, 1);
+});
+
+test('a complete GE block satisfies every area', () => {
+  const ge = geOf([
+    'WRIT 2',        // A1
+    'WRIT 50E',      // A2
+    'ANTH 3',        // D + NWC + WRT
+    'ANTH 25',       // D + WRT
+    'ARTHI 115E',    // E
+    'AS AM 1',       // D... and ETH
+    'ARTHI 5B',      // F
+    'ITAL 102',      // G
+    'BL ST 130A',    // E or G + WRT
+    'C LIT 30A',     // G or E + EUR + WRT
+  ]);
+  const short = ge.areas.filter((a) => !a.met).map((a) => `${a.id} ${a.have}/${a.min}`);
+  assert.deepEqual(short, []);
+  assert.equal(ge.met, true);
+});
+
+test('a degree is not complete while GE is outstanding', () => {
+  // The EE four-year plan below satisfies every major requirement; GE alone keeps
+  // audit.met false, which is the honest answer.
+  const plan = planOf({
+    'Y1-Fall': ['ECE 3', 'ECE 5', 'MATH 3A'],
+    'Y1-Winter': ['CMPSC 16', 'MATH 3B', 'PHYS 7A'],
+  });
+  const audit = auditDegree(plan, programOf('EE'));
+  assert.equal(audit.generalEducation.met, false);
+  assert.equal(audit.met, false);
 });
 
 /* --------------------------------------------------------------------- report */

@@ -1,18 +1,8 @@
 import React from 'react';
 import { describePrereqTree } from '../utils/validation';
+import { GE_LABEL } from '../utils/geLabels';
+import { colorFor } from '../utils/cardColor';
 import './CourseCard.css';
-
-const PASTELS = [
-  'pastel-1', 'pastel-2', 'pastel-3', 'pastel-4',
-  'pastel-5', 'pastel-6', 'pastel-7', 'pastel-8',
-];
-
-/** Stable colour per course, so a card looks the same everywhere. */
-function colorFor(code) {
-  let hash = 0;
-  for (let i = 0; i < code.length; i += 1) hash = (hash * 31 + code.charCodeAt(i)) % 1024;
-  return PASTELS[hash % PASTELS.length];
-}
 
 const QUARTER_ABBR = { Fall: 'F', Winter: 'W', Spring: 'S' };
 
@@ -27,6 +17,8 @@ const QUARTER_ABBR = { Fall: 'F', Winter: 'W', Spring: 'S' };
 function CourseCard({ course, isDraggable = false, compact = false, issue = null, showDetail = false }) {
   const prereqText = describePrereqTree(course.prereq_tree);
   const offered = course.offered_quarters || [];
+  // General areas first, then the special ones, which is how the GEAR reads.
+  const geAreas = [...(course.ge_areas || []), ...(course.special_areas || [])];
   const unconfirmed =
     course.offering_confidence === 'uncertain' || course.offering_confidence === 'unknown';
 
@@ -59,6 +51,16 @@ function CourseCard({ course, isDraggable = false, compact = false, issue = null
         <div className="course-prerequisites">
           <span className="prereq-label">Prerequisites</span>
           <span className="prereq-text">{prereqText}</span>
+        </div>
+      )}
+
+      {geAreas.length > 0 && (
+        <div className="course-ge">
+          {geAreas.map((a) => (
+            <span key={a} className="ge-badge" title={GE_LABEL[a] || a}>
+              {compact ? a : GE_LABEL[a] || a}
+            </span>
+          ))}
         </div>
       )}
 
@@ -96,6 +98,14 @@ function CourseCard({ course, isDraggable = false, compact = false, issue = null
 
           {course.offering_notes?.length > 0 && (
             <p className="course-source-text">{course.offering_notes.join(' ')}</p>
+          )}
+
+          {course.ge_notes?.length > 0 && (
+            <p className="course-source-text">{course.ge_notes.join(' ')}</p>
+          )}
+
+          {course.prereq_notes?.length > 0 && (
+            <p className="course-source-text">{course.prereq_notes.join(' ')}</p>
           )}
 
           <p className="course-source-text course-provenance">

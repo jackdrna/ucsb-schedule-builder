@@ -31,7 +31,22 @@ const CREDIT_KEY = 'ucsb-schedule-credit-v1';
 const WAIVER_KEY = 'ucsb-schedule-waivers-v1';
 const DOCK_KEY = 'ucsb-schedule-dock-v1';
 const SUMMER_KEY = 'ucsb-schedule-summer-v1';
-const SUBJECT_FILTERS = ['All', 'ECE', 'CMPSC', 'MATH', 'PHYS', 'CHEM', 'Other'];
+const SUBJECT_FILTERS = ['All', 'ECE', 'CMPSC', 'MATH', 'PHYS', 'CHEM', 'G.E.', 'Other'];
+const NAMED_SUBJECTS = ['ECE', 'CMPSC', 'MATH', 'PHYS', 'CHEM'];
+
+/**
+ * How many courses the sidebar will render at once.
+ *
+ * General education put ~1,200 courses in the catalog, and every card here is a
+ * drag source: rendering them all costs a visible pause on every keystroke. The
+ * list is capped and the count says so, which is why the search box matters more
+ * than it used to.
+ */
+const SIDEBAR_LIMIT = 120;
+
+/** Does this course carry any general education tag? */
+const isGeneralEducation = (c) =>
+  (c.ge_areas || []).length > 0 || (c.special_areas || []).length > 0;
 
 /** Version stamped into saved plan files, so a future format change can migrate. */
 const PLAN_FILE_VERSION = 1;
@@ -220,12 +235,14 @@ function ScheduleBuilder() {
     return courses.filter((c) => {
       if (scheduledCodes.has(c.code)) return false;
       if (priorCredit.has(c.code)) return false;   // already done, needs no slot
-      if (subject === 'ECE' || subject === 'CMPSC') {
+      if (NAMED_SUBJECTS.includes(subject)) {
         if (c.subject !== subject) return false;
-      } else if (subject === 'MATH' || subject === 'PHYS' || subject === 'CHEM') {
-        if (c.subject !== subject) return false;
+      } else if (subject === 'G.E.') {
+        if (!isGeneralEducation(c)) return false;
       } else if (subject === 'Other') {
-        if (['ECE', 'CMPSC', 'MATH', 'PHYS', 'CHEM'].includes(c.subject)) return false;
+        // Everything that is neither a named subject nor general education, so
+        // this stays the short tail it was before GE arrived.
+        if (NAMED_SUBJECTS.includes(c.subject) || isGeneralEducation(c)) return false;
       }
       if (!query) return true;
       return (
@@ -234,6 +251,13 @@ function ScheduleBuilder() {
       );
     });
   }, [courses, scheduledCodes, priorCredit, search, subject]);
+
+  // Only the first SIDEBAR_LIMIT are rendered; the Draggable indices have to match
+  // the list actually on screen, so the slice happens once, here.
+  const shownCourses = useMemo(
+    () => availableCourses.slice(0, SIDEBAR_LIMIT),
+    [availableCourses]
+  );
 
   const handleDragEnd = useCallback(
     (result) => {
@@ -591,7 +615,11 @@ function ScheduleBuilder() {
                       </button>
                     ))}
                   </div>
-                  <span className="result-count">{availableCourses.length} courses</span>
+                  <span className="result-count">
+                    {availableCourses.length > shownCourses.length
+                      ? `first ${shownCourses.length} of ${availableCourses.length} — search to narrow`
+                      : `${availableCourses.length} courses`}
+                  </span>
                 </div>
 
                 <Droppable droppableId={SIDEBAR_ID} type="COURSE">
@@ -601,10 +629,10 @@ function ScheduleBuilder() {
                       ref={provided.innerRef}
                       {...provided.droppableProps}
                     >
-                      {availableCourses.length === 0 ? (
+                      {shownCourses.length === 0 ? (
                         <p className="empty-message">No courses match.</p>
                       ) : (
-                        availableCourses.map((course, index) => (
+                        shownCourses.map((course, index) => (
                           <Draggable
                             key={course.code}
                             draggableId={`course:${course.code}`}

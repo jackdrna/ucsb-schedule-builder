@@ -20,7 +20,10 @@ Drop a course into a quarter and it is refused, with the reason, if:
   quarters, produce a **warning** rather than a block — they may still appear in GOLD.
 - **A prerequisite is missing or too late.** Requirements are real AND/OR trees, so
   `ECE 146A` accepts *either* `ECE 139` or `PSTAT 120A`, and `ECE 152A` accepts
-  *either* the `ECE 15A` + `ECE 10A`/`10AL` path or `CMPSC 64`.
+  *either* the `ECE 15A` + `ECE 10A`/`10AL` path or `CMPSC 64`. Trees are published
+  only for ECE, CMPSC and the courses the majors name — the parser was verified
+  against those and misreads other departments' prose, so a general education course
+  shows the catalog's own prerequisite sentence and is never blocked on it.
 - **The prerequisite is in the same quarter** — unless the catalog says
   "may be taken concurrently", as it does for `ECE 10AL` with `ECE 10A`.
 - **The course is already in your plan**, or the quarter already holds five courses.
@@ -38,19 +41,52 @@ Registration restrictions (`open to EE majors only`), class standing, consent of
 instructor and minimum grades are recorded and shown on the course card, but do not
 block scheduling.
 
+## General education
+
+The dataset carries all 1,234 GE-approved courses, across 79 subjects. The areas are
+not a transcribed list — the UCSB General Catalog tags every course itself, and the
+pipeline sweeps by tag, so a course newly approved for an area arrives on the next
+refresh.
+
+**Degree progress** audits the whole College of Engineering GE block: Areas A-1, A-2,
+D, E, F and G, plus the Writing, Ethnicity and European Traditions / World Cultures
+requirements. Two counting rules, both the GEAR's:
+
+- A course fills **one** general area, even when it is tagged for two. 67 courses are,
+  so the audit matches courses to area slots rather than counting each area alone —
+  one Area E+G course cannot quietly satisfy both.
+- Special areas stack. The same course counts for its general area *and* every special
+  area it carries, which is why a plan can read `1/2 Area E` while that course is also
+  counted for Writing and World Cultures.
+
+`ENGR 101` counts towards the Writing requirement, as the GEAR allows, even though it
+is also a major requirement and carries no catalog tag.
+
+Two things are **not** checked, and the panel says so instead of showing a tick: the
+Entry Level Writing Requirement, and American History and Institutions, which the
+GEAR publishes as its own course list with no catalog tag behind it.
+
 ## Course directory modes
 
-The directory opens on the whole catalog, but a **Show** row switches it to one
-degree list at a time: `EE required`, `EE electives`, `CE required`, `CE electives`.
+The directory opens on the whole catalog. A **Show** row switches it to one degree
+list at a time — `EE required`, `EE electives`, `CE required`, `CE electives` — and a
+**G.E.** row to one area at a time, from `A-1` through `Quantitative`. Clicking the
+active chip clears it.
+
 The required lists include the alternatives inside an "or" — `CHEM 1A or 2A or ECE 6`
 puts all three on screen — because the mode is there to show what the degree can be
-built from, not to pick a branch for you. Each list carries its unit minimum and a
-link to the GEAR page it came from.
+built from, not to pick a branch for you. Each list carries its unit minimum or area
+name and a link to the source it came from.
 
-The modes are generated from the requirements dataset, so a third major appears here
-as soon as it appears in the data. Search, subject and quarter still apply inside the
-chosen list; picking a mode clears the subject filter, so the whole list is visible
-rather than just its ECE half.
+Both families are generated from the datasets, so a third major, or a new GE area,
+appears here as soon as it appears in the data. Search, subject and quarter still
+apply inside the chosen list; picking a mode clears the subject filter, so the whole
+list is visible rather than just its ECE half.
+
+In the builder's sidebar the same courses sit behind a **G.E.** filter chip, and the
+list renders at most 120 cards at a time — every card there is a drag source, and
+1,400 of them costs a visible pause on each keystroke. The count says when it has
+been capped.
 
 ## Prior credit and waivers
 
@@ -124,16 +160,28 @@ sheet and the department track pages:
   [senior elective sequences](https://www.ce.ucsb.edu/undergrad/curriculum/senior-elective-sequences).
   Partly finished ones show progress and the courses that would complete them.
 
-General education, writing and free electives are not modelled, so the total-unit
-count is always short of the 189 (EE) / 191 (CE) needed to graduate.
+- **General education** — the nine-area College of Engineering block, described
+  above.
+
+Free electives are not modelled, so a plan that meets every requirement above can
+still sit under the 189 (EE) / 191 (CE) units needed to graduate.
 
 ## Coverage
 
-192 courses: all planable undergraduate **ECE** (75) and **CMPSC** (53), plus the
-**MATH**, **PHYS**, **CHEM**, **ENGR**, **PSTAT**, **MATRL**, **ME**, **TMP** and
-**WRIT** courses that the EE and CE majors require or accept as electives, or that
-appear in an ECE/CMPSC prerequisite. Seminars, internships, independent study and
-ad-hoc special topics are left out — they cannot be planned on a grid.
+1,434 courses:
+
+- All planable undergraduate **ECE** (75), **CMPSC** (53) and **TMP** (32).
+- The **MATH**, **PHYS**, **CHEM**, **ENGR**, **PSTAT**, **MATRL**, **ME** and
+  **WRIT** courses the majors require or accept as electives, or that appear in an
+  ECE/CMPSC prerequisite.
+- All **1,234 general education** courses, across 79 subjects.
+
+Seminars, internships, independent study and ad-hoc special topics are left out —
+they cannot be planned on a grid.
+
+Quarter offerings are only harvested for the eight original subjects, so most GE
+courses carry no confirmed quarter and warn rather than block when placed. Extending
+`harvest_soc.py`'s `SUBJECTS` fixes that, at roughly an hour of scraping.
 
 ## Quick start
 
@@ -177,12 +225,14 @@ Two deliberate choices make the build portable:
 node frontend/src/utils/validation.test.mjs   # or: cd frontend && npm test
 ```
 
-59 checks run the validator against the real dataset — quarter blocking, the Summer
+70 checks run the validator against the real dataset — quarter blocking, the Summer
 rules, AND/OR resolution, concurrency, retired alternatives, the cascade when a
 prerequisite is removed, degree auditing for both majors, prior credit and waivers,
-and the assertions that no course has an impossible requirement and no program
-references a course that is missing. The last test builds a complete four-year EE
-plan and asserts it is both legal and sufficient.
+the general education block including the one-course-one-area rule, and the
+assertions that no course has an impossible requirement, that no course outside the
+verified subjects carries a prerequisite tree, and that no program references a
+course that is missing. One test builds a complete four-year EE plan and asserts it
+is both legal and sufficient for the major.
 
 ## Tech stack
 
@@ -246,7 +296,7 @@ schedule-builder/
 │       ├── generate-seed.js
 │       └── ucsb/                    # the UCSB scraping + parsing pipeline
 └── frontend/src/
-    ├── pages/MasterPage.jsx         # course directory, degree-list modes
+    ├── pages/MasterPage.jsx         # course directory, degree-list and G.E. modes
     ├── pages/ScheduleBuilder.jsx    # 4 years x Fall/Winter/Spring(+Summer)
     ├── components/CourseCard.jsx
     ├── components/BottomDock.jsx     # one collapse for all three panels

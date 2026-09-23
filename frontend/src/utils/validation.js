@@ -391,6 +391,7 @@ export function validatePlan(schedule, catalog, options = {}) {
  *      groups:    [{ id, name, requirements: [{ label, met, missing, units, note }] }],
  *      electives: { name, minUnits, units, courses, met, note },
  *      depth:     { name, label, minComplete, completed, items: [...], met, note },
+ *      generalEducation: { name, areas: [...], met, unchecked } | null,
  *      units:     { planned, credited, required, met },
  *      met:       boolean,
  *      summary:   { requiredMet, requiredTotal }
@@ -456,12 +457,16 @@ export function auditDegree(schedule, program, options = {}) {
   const completedDepth = depthItems.filter((d) => d.met);
   const minDepth = depthSpec.min_complete || 0;
 
+  // General education, from the course tags rather than a list of codes.
+  const generalEducation = auditGeneralEducation(planned, program.general_education);
+
   const plannedUnits = totalUnits(planned);
   const requiredUnits = program.total_units || 0;
 
   const electivesMet = electiveUnits >= minElectiveUnits;
   const depthMet = completedDepth.length >= minDepth;
   const unitsMet = plannedUnits >= requiredUnits;
+  const geMet = !generalEducation || generalEducation.met;
 
   return {
     program: { code: program.code, name: program.name, catalogYear: program.catalog_year },
@@ -483,6 +488,7 @@ export function auditDegree(schedule, program, options = {}) {
       met: depthMet,
       note: depthSpec.note || null,
     },
+    generalEducation,
     units: {
       planned: plannedUnits,
       credited: totalUnits(credited),
@@ -490,7 +496,9 @@ export function auditDegree(schedule, program, options = {}) {
       met: unitsMet,
     },
     summary: { requiredMet, requiredTotal: requiredAll.length },
-    met: requiredMet === requiredAll.length && electivesMet && depthMet && unitsMet,
+    met:
+      requiredMet === requiredAll.length &&
+      electivesMet && depthMet && unitsMet && geMet,
   };
 }
 
@@ -523,6 +531,127 @@ function satisfiedCodes(node, has) {
     if (unmetCodes(kid, has) === null) return satisfiedCodes(kid, has);
   }
   return [];
+}
+
+/* ------------------------------------------------------------ general education */
+
+/**
+ * Assign planned courses to general subject area slots.
+ *
+ * The GEAR is explicit that "a course listed in more than one general subject area
+ * can be applied to only one of these areas", and 67 courses in the catalog carry
+ * two. Counting each area on its own would let one Area E+G course satisfy both, so
+ * the areas are matched against the plan instead: every required course in an area
+ * is a slot, a course can fill one slot, and we look for the largest set of slots
+ * that can be filled at once.
+ *
+ * Kuhn's algorithm, over at most eight slots -- the recursion cannot get deep.
+ *
+ * -> Map from slot index to the course filling it.
+ */
+function matchGeneralAreas(courses, slots) {
+  const candidates = slots.map((area) =>
+    courses
+      .map((c, i) => i)
+      .filter((i) => (courses[i].ge_areas || []).some((t) => area.tags.includes(t)))
+  );
+
+  const takenBy = new Map();   // course index -> slot index
+  let seen = new Set();
+
+  const assign = (slot) => {
+    for (const ci of candidates[slot]) {
+      if (seen.has(ci)) continue;
+      seen.add(ci);
+      // Free, or its current holder can be rehoused somewhere else.
+      if (!takenBy.has(ci) || assign(takenBy.get(ci))) {
+        takenBy.set(ci, slot);
+        return true;
+      }
+    }
+    return false;
+  };
+
+  for (let s = 0; s < slots.length; s += 1) {
+    seen = new Set();
+    assign(s);
+  }
+
+  const bySlot = new Map();
+  for (const [ci, slot] of takenBy) bySlot.set(slot, courses[ci]);
+  return bySlot;
+}
+
+/**
+ * Progress against the College of Engineering general education block.
+ *
+ * `planned` is every course in the plan plus prior credit -- GE is satisfied by
+ * coursework wherever it sits, exactly like a major requirement.
+ *
+ * Special subject areas are counted straight rather than matched: the GEAR allows a
+ * course to apply "towards a single general subject area and any special subject
+ * areas which that course fulfills", so they overlap the general areas by design.
+ *
+ * -> { name, areas: [{ id, label, kind, min, have, met, courses }], met, ... }
+ */
+export function auditGeneralEducation(planned, spec) {
+  if (!spec) return null;
+
+  const all = spec.areas || [];
+  const general = all.filter((a) => a.kind === 'general');
+  const special = all.filter((a) => a.kind !== 'general');
+
+  // One slot per course the area requires, so 'Area D, 2 courses' is two slots.
+  const slots = general.flatMap((a) => Array.from({ length: a.min }, () => a));
+  const filled = matchGeneralAreas(planned, slots);
+
+  const areas = [];
+  let slot = 0;
+  for (const area of general) {
+    const used = [];
+    for (let i = 0; i < area.min; i += 1, slot += 1) {
+      const course = filled.get(slot);
+      if (course) used.push(course.code);
+    }
+    areas.push({
+      id: area.id,
+      label: area.label,
+      kind: 'general',
+      min: area.min,
+      have: used.length,
+      met: used.length >= area.min,
+      note: area.note || null,
+      courses: used,
+    });
+  }
+
+  for (const area of special) {
+    const used = planned
+      .filter((c) => (c.special_areas || []).some((t) => area.tags.includes(t)))
+      .map((c) => c.code);
+    areas.push({
+      id: area.id,
+      label: area.label,
+      kind: 'special',
+      min: area.min,
+      have: used.length,
+      met: used.length >= area.min,
+      note: area.note || null,
+      courses: used,
+    });
+  }
+
+  return {
+    name: spec.name || 'General education',
+    note: spec.note || null,
+    source: spec.source || null,
+    sourceUrl: spec.source_url || null,
+    unchecked: spec.unchecked || [],
+    totalCourses: spec.total_courses || slots.length,
+    areas,
+    met: areas.every((a) => a.met),
+    summary: { met: areas.filter((a) => a.met).length, total: areas.length },
+  };
 }
 
 /** Evaluate one track/sequence rule. An option is met if any of its codes is planned. */

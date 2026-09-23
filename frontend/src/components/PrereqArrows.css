@@ -1,0 +1,47 @@
+/* Sits over the whole course grid, above the page tint (40) and beneath the traced
+   courses (42), so each arrow slides out from under the course it leaves. Arrows
+   cross faded courses and may spill into the page padding, hence overflow: visible. */
+.prereq-arrows {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 41;
+}
+
+.prereq-arrow {
+  animation: arrow-in 0.2s ease-out both;
+}
+
+.prereq-arrow .arrow-line {
+  fill: none;
+  stroke-width: 6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Into the traced course from its prerequisites, styled by how the catalog names
+   each one, and out to what it unlocks. Colour and dash both carry the meaning,
+   so the styles stay apart for colour-blind readers too. */
+.prereq-arrow.prereq .arrow-line { stroke: var(--trace-prereq); }
+.prereq-arrow.prereq .arrow-head { fill: var(--trace-prereq); }
+.prereq-arrow.one-of .arrow-line { stroke: var(--trace-one-of); stroke-dasharray: 16 12; }
+.prereq-arrow.one-of .arrow-head { fill: var(--trace-one-of); }
+.prereq-arrow.concurrent .arrow-line { stroke: var(--trace-concurrent); stroke-dasharray: 16 12; }
+.prereq-arrow.concurrent .arrow-head { fill: var(--trace-concurrent); }
+.prereq-arrow.concurrent-one-of .arrow-line { stroke: var(--trace-concurrent); stroke-dasharray: 0.1 13; }
+.prereq-arrow.concurrent-one-of .arrow-head { fill: var(--trace-concurrent); }
+.prereq-arrow.dependent .arrow-line { stroke: var(--trace-dependent); }
+.prereq-arrow.dependent .arrow-head { fill: var(--trace-dependent); }
+
+@keyframes arrow-in {
+  from { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .prereq-arrow {
+    animation: none;
+  }
+}

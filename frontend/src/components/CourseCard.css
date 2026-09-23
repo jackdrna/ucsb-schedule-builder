@@ -117,6 +117,30 @@
   font-weight: 600;
 }
 
+/* General education areas. Outlined rather than filled, so they read as a
+   classification of the course and not as another offering badge. */
+.course-ge {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+}
+
+.ge-badge {
+  display: inline-block;
+  padding: 0 6px;
+  border: 1px solid currentColor;
+  border-radius: var(--radius-sm);
+  font-size: 0.66rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.course-card.compact .ge-badge {
+  padding: 0 3px;
+  font-size: 0.6rem;
+}
+
 .quarter-badge.tentative {
   background-color: transparent;
   color: var(--text-secondary);

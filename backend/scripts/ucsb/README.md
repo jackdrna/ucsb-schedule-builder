@@ -14,6 +14,8 @@ sources. Nothing is hand-entered except the prerequisite trees listed in
 | **EE / CE major requirements** | **GEAR 2026-27** — [engineering.ucsb.edu GEAR publications](https://engineering.ucsb.edu/undergraduate/academic-advising/gear-publications), pp. 20-21 (CE) and 24-25 (EE) | The College of Engineering's official requirement sheets and four-year plans. |
 | **EE tracks** | [ece.ucsb.edu/undergrad/curriculum](https://www.ece.ucsb.edu/undergrad/curriculum) | The nine depth tracks and their course lists; the GEAR defers to the department for these. |
 | **CE senior elective sequences** | [ce.ucsb.edu/.../senior-elective-sequences](https://www.ce.ucsb.edu/undergrad/curriculum/senior-elective-sequences) | The twelve sequences and their coursework. |
+| **General education areas** | **UCSB General Catalog**, `customFields.generalSubjectAreas` and `specialSubjectAreas` | The catalog tags every course itself — the same tagging the registrar's GE search reads — so there is no list to transcribe and no list to go stale. |
+| **GE requirement counts** | **GEAR 2026-27**, pp. 11-12 | How many courses each area needs, and the two counting rules. |
 
 The two offering sources were cross-checked against each other: for the 72 ECE
 courses present in both, they agree on every course except ECE 179P, a new course
@@ -59,6 +61,38 @@ Then confirm nothing regressed:
 node frontend/src/utils/validation.test.mjs
 ```
 
+## General education
+
+`fetch_catalog.py` sweeps the catalog twice more, by tag rather than by subject:
+every course with a `generalSubjectAreas` value (`A1 A2 B C D E F G`) and every
+course with a `specialSubjectAreas` value (`ETH EUR NWC WRT QNT`). That is 1,234
+courses across 79 subjects, and it means a course newly approved for an area
+arrives on the next run without anyone editing a list.
+
+`build_dataset.py` records both on the row as `ge_areas` and `special_areas`.
+One curated exception, in `GE_OVERRIDES`: the GEAR grants `ENGR 101` the writing
+requirement — "even by those students for whom ENGR 101 is required" — but the
+catalog carries no tag for it, because that is a College rule rather than a Senate
+GE approval.
+
+`requirements.py` holds the requirement itself in `GENERAL_EDUCATION`, shared by
+both majors because it is a College of Engineering requirement. It is a count of
+tagged courses rather than a list of codes, and the two kinds count differently:
+
+| Kind | Rule | GEAR wording |
+|---|---|---|
+| `general` | one course fills **one** area | "A course listed in more than one general subject area can be applied to only one of these areas." |
+| `special` | counted straight, overlapping the general areas | "a course can be applied towards a single general subject area and any special subject areas which that course fulfills" |
+
+67 courses in the catalog carry two general areas, so the first rule is not
+theoretical: the frontend matches courses to area slots rather than counting each
+area on its own. See `matchGeneralAreas` in `validation.js`.
+
+Two requirements are deliberately not modelled, and the app says so rather than
+showing a green tick: the Entry Level Writing Requirement, and American History and
+Institutions — the GEAR publishes that as its own course list with no catalog tag
+behind it.
+
 ## How prerequisites are turned into rules
 
 `prereq_parser.py` converts the catalog's English into an AND/OR tree:
@@ -91,6 +125,35 @@ numbers.
 Clauses that are requirements but not course prerequisites — `open to EE majors
 only`, `upper-division standing`, `consent of instructor`, `with a minimum grade of
 C-` — are pulled out into `prereq_notes` and never block scheduling.
+
+### Which courses get a tree at all
+
+Only the **verified roster** — ECE, CMPSC and the `SUPPORT_SEEDS` the majors name,
+plus whatever their prerequisites reach, 192 courses in all. `prereq_parser.py` was
+written against ECE and CMPSC catalog prose and checked course by course with
+`review.py`; general education brings in 79 departments it has never been read
+against, and it misreads them. Two real examples from the first GE build:
+
+```
+ENV S 115  "...Mathematics 2B, or 3B, or 34B, or Mathematics 34A and
+            Environmental Studies 25"
+      ->   AND(MATH 2B, MATH 3B, MATH 34B, MATH 34A, MATH 25)
+
+TMP 132    "Writing 50 or equivalent (English 10, Writing 50*, Writing 105*,
+            Writing 107*, or 109*)"
+      ->   OR(ENGR 50, ENGR 105, ENGR 107, ENGR 109)
+```
+
+An OR list read as an AND, and a subject carried over from the previous clause. A
+wrong tree is worse than no tree: the validator would refuse a legal plan and cite a
+requirement UCSB never made. So courses outside the verified roster keep
+`prereq_raw` — the catalog's own sentence, shown on the card — with `prereq_tree`
+set to `null` and a note saying it is not machine-checked. 913 courses are in that
+position. A test asserts no course outside the tuned subjects carries a tree.
+
+To extend the trusted set, add the subject to `fetch_catalog.py`, run
+`python review.py SUBJ` and read every line, then add it to `SUPPORT_SEEDS` or
+`ROSTER_SUBJECTS`.
 
 ### Retired courses
 

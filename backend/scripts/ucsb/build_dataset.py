@@ -32,6 +32,24 @@ ORDER = ["Fall", "Winter", "Spring"]
 # internships, research credit, apprenticeships, ad-hoc special topics.
 UNPLANNABLE = re.compile(r"^(92|94[A-Z]*|96[A-Z]*|99|100|190[A-Z]*|192|193|194[A-Z]*|196[A-Z]*|199|90[A-Z]*|95|11[A-Z]{2})$")
 
+# Subjects taken whole, not by seed: the two majors, plus Technology Management,
+# whose upper-division courses the EE elective list draws on.
+ROSTER_SUBJECTS = ("ECE", "CMPSC", "TMP")
+
+# General education comes off the catalog's own tags rather than a transcribed list.
+# One curated exception, from the GEAR itself: "ENGR 101 may be used as a writing
+# requirement class, even by those students for whom ENGR 101 is required"
+# (GEAR 2024-25 p. 12, unchanged in 2026-27). The catalog carries no GE tag for it,
+# because it is a College of Engineering rule rather than a Senate GE approval.
+GE_OVERRIDES = {
+    "ENGR 101": {
+        "general": [],
+        "special": ["WRT"],
+        "why": "GEAR: ENGR 101 may be used as a writing requirement class, even by "
+               "those students for whom ENGR 101 is required.",
+    },
+}
+
 # Courses the EE / CE majors require or accept, per the 2026-27 GEAR major
 # requirement sheets (engineering.ucsb.edu GEAR, pp. 20 and 24), plus the
 # alternatives that ECE/CMPSC prerequisites name.
@@ -198,12 +216,24 @@ def is_planable(code):
     return not UNPLANNABLE.match(n)
 
 
-roster = set()
+def ge_tags(code):
+    """-> (general areas, special areas) for a course, curated override winning."""
+    ov = GE_OVERRIDES.get(code)
+    if ov:
+        return list(ov["general"]), list(ov["special"])
+    cf = (by_code[code].get("customFields") or {})
+    return (list(cf.get("generalSubjectAreas") or []),
+            list(cf.get("specialSubjectAreas") or []))
+
+
+# The verified roster: the two majors and the hand-picked support courses whose
+# prerequisite trees review.py has actually been run against. Only these carry a
+# machine-readable tree -- see TRUSTED_PREREQS below.
+verified = set()
 for code in by_code:
-    subj = code.rsplit(" ", 1)[0]
-    if subj in ("ECE", "CMPSC") and is_planable(code):
-        roster.add(code)
-roster |= {c for c in SUPPORT_SEEDS if c in by_code}
+    if code.rsplit(" ", 1)[0] in ("ECE", "CMPSC") and is_planable(code):
+        verified.add(code)
+verified |= {c for c in SUPPORT_SEEDS if c in by_code}
 
 # Pull in anything named by a prerequisite of a rostered course (transitively).
 prereq_cache = {}
@@ -227,14 +257,38 @@ def prereq_of(code):
 
 for _ in range(6):
     added = False
-    for code in list(roster):
+    for code in list(verified):
         tree, _n, _r = prereq_of(code)
         for ref in codes_in(tree):
-            if ref not in roster and ref in by_code:
-                roster.add(ref)
+            if ref not in verified and ref in by_code:
+                verified.add(ref)
                 added = True
     if not added:
         break
+
+# Prerequisite trees are only published for the verified roster.
+#
+# prereq_parser.py was written against ECE and CMPSC catalog prose and checked
+# course by course with review.py. The GE sweep brings in 79 departments it has
+# never been read against, and it misreads them: 'Mathematics 2B, or 3B, or 34B, or
+# Mathematics 34A and Environmental Studies 25' (ENV S 115) comes out as an AND of
+# five courses, one of them invented. A wrong tree is worse than no tree, because
+# the validator would refuse a legal plan and cite a requirement UCSB never made.
+#
+# So courses outside the verified roster keep the catalog's own prerequisite
+# sentence -- the card still shows it -- but carry no tree, and the validator treats
+# them the way it treats any course with no published prerequisites.
+TRUSTED_PREREQS = set(verified)
+
+# Everything else the app should be able to plan with: general education, the rest
+# of Technology Management.
+roster = set(verified)
+for code in by_code:
+    if not is_planable(code):
+        continue
+    if code.rsplit(" ", 1)[0] in ROSTER_SUBJECTS or any(ge_tags(code)):
+        roster.add(code)
+roster |= {c for c in GE_OVERRIDES if c in by_code}
 
 
 # ------------------------------------------------------------------ emit rows
@@ -249,6 +303,19 @@ for code in sorted(roster, key=sort_key):
     if units is None:
         units = (credits.get("creditHours") or {}).get("min")
     majors = ((c.get("customFields") or {}).get("theseMajorsCanRegister")) or []
+    general, special = ge_tags(code)
+    ge_notes = []
+    if code in GE_OVERRIDES:
+        ge_notes.append(f"[curated] {GE_OVERRIDES[code]['why']}")
+
+    if code not in TRUSTED_PREREQS:
+        tree = None
+        if raw:
+            notes = notes + [
+                "This app does not machine-check prerequisites outside Electrical & "
+                "Computer Engineering and the courses the majors name. The catalog "
+                "sentence above is the requirement -- confirm it in GOLD."
+            ]
 
     courses.append({
         "code": code,
@@ -263,6 +330,9 @@ for code in sorted(roster, key=sort_key):
         "prereq_raw": raw,
         "prereq_tree": tree,
         "prereq_notes": notes,
+        "ge_areas": general,
+        "special_areas": special,
+        "ge_notes": ge_notes,
         "offered_quarters": off["quarters"],
         "offering_confidence": off["confidence"],
         "offering_notes": off["notes"],
@@ -291,6 +361,9 @@ for code, extra in NEW_COURSES.items():
         "prereq_raw": "",
         "prereq_tree": None,
         "prereq_notes": [f"[new course] {extra['note']}"],
+        "ge_areas": [],
+        "special_areas": [],
+        "ge_notes": [],
         "offered_quarters": off["quarters"],
         "offering_confidence": off["confidence"],
         "offering_notes": off["notes"] + [extra["note"]],
@@ -306,9 +379,18 @@ json.dump(courses, open(OUT, "w", encoding="utf-8"), indent=1)
 # ------------------------------------------------------------------- summary
 print(f"{len(courses)} courses -> {os.path.relpath(OUT)}")
 from collections import Counter
-print("by subject :", dict(Counter(c["subject"] for c in courses)))
+subjects = Counter(c["subject"] for c in courses)
+print("subjects   :", len(subjects), "|", dict(subjects.most_common(10)), "...")
 print("offering   :", dict(Counter(c["offering_confidence"] for c in courses)))
-print("with prereq:", sum(1 for c in courses if c["prereq_tree"]))
+print("with prereq:", sum(1 for c in courses if c["prereq_tree"]),
+      f"(trees published for {len(TRUSTED_PREREQS)} verified courses; "
+      f"{sum(1 for c in courses if not c['prereq_tree'] and c['prereq_raw'])} carry "
+      f"catalog prerequisite text with no tree)")
+areas = Counter(a for c in courses for a in c["ge_areas"])
+special = Counter(a for c in courses for a in c["special_areas"])
+print("GE areas   :", dict(sorted(areas.items())))
+print("GE special :", dict(sorted(special.items())))
+print("GE courses :", sum(1 for c in courses if c["ge_areas"] or c["special_areas"]))
 known = {c["code"] for c in courses}
 missing = Counter()
 for c in courses:

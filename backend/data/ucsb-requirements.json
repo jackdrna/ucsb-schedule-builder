@@ -647,6 +647,104 @@
      ]
     }
    ]
+  },
+  "general_education": {
+   "name": "College of Engineering general education",
+   "source": "UCSB GEAR 2026-27, General Education (pp. 11-12)",
+   "source_url": "https://engineering.ucsb.edu/sites/default/files/images/26-27_GEAR.pdf",
+   "total_courses": 8,
+   "note": "Eight courses: two in Area A and at least six across Areas D, E, F and G. The special subject areas are satisfied inside those same six, not on top of them.",
+   "unchecked": [
+    "UC Entry Level Writing Requirement.",
+    "American History and Institutions -- one four-unit course from the GEAR's own list. The catalog carries no tag for it, so it is not modelled here; it may double count with a GE course."
+   ],
+   "areas": [
+    {
+     "id": "A1",
+     "kind": "general",
+     "tags": [
+      "A1"
+     ],
+     "min": 1,
+     "label": "Area A-1: English Reading & Composition",
+     "note": "WRIT 2 or 2E."
+    },
+    {
+     "id": "A2",
+     "kind": "general",
+     "tags": [
+      "A2"
+     ],
+     "min": 1,
+     "label": "Area A-2: English Reading & Composition",
+     "note": "WRIT 50 or 50E, or an approved WRIT 105/107/109 course. Engineering majors are encouraged to take 2E and 50E in their first year."
+    },
+    {
+     "id": "D",
+     "kind": "general",
+     "tags": [
+      "D"
+     ],
+     "min": 2,
+     "label": "Area D: Social Sciences"
+    },
+    {
+     "id": "E",
+     "kind": "general",
+     "tags": [
+      "E"
+     ],
+     "min": 2,
+     "label": "Area E: Culture and Thought"
+    },
+    {
+     "id": "F",
+     "kind": "general",
+     "tags": [
+      "F"
+     ],
+     "min": 1,
+     "label": "Area F: The Arts"
+    },
+    {
+     "id": "G",
+     "kind": "general",
+     "tags": [
+      "G"
+     ],
+     "min": 1,
+     "label": "Area G: Literature"
+    },
+    {
+     "id": "WRT",
+     "kind": "special",
+     "tags": [
+      "WRT"
+     ],
+     "min": 4,
+     "label": "Writing requirement",
+     "note": "Four designated courses, taken within Areas D-G. ENGR 101 counts, even for students who need it for the major."
+    },
+    {
+     "id": "ETH",
+     "kind": "special",
+     "tags": [
+      "ETH"
+     ],
+     "min": 1,
+     "label": "Ethnicity"
+    },
+    {
+     "id": "EUR_NWC",
+     "kind": "special",
+     "tags": [
+      "EUR",
+      "NWC"
+     ],
+     "min": 1,
+     "label": "European Traditions or World Cultures"
+    }
+   ]
   }
  },
  {
@@ -1227,6 +1325,104 @@
        ]
       }
      ]
+    }
+   ]
+  },
+  "general_education": {
+   "name": "College of Engineering general education",
+   "source": "UCSB GEAR 2026-27, General Education (pp. 11-12)",
+   "source_url": "https://engineering.ucsb.edu/sites/default/files/images/26-27_GEAR.pdf",
+   "total_courses": 8,
+   "note": "Eight courses: two in Area A and at least six across Areas D, E, F and G. The special subject areas are satisfied inside those same six, not on top of them.",
+   "unchecked": [
+    "UC Entry Level Writing Requirement.",
+    "American History and Institutions -- one four-unit course from the GEAR's own list. The catalog carries no tag for it, so it is not modelled here; it may double count with a GE course."
+   ],
+   "areas": [
+    {
+     "id": "A1",
+     "kind": "general",
+     "tags": [
+      "A1"
+     ],
+     "min": 1,
+     "label": "Area A-1: English Reading & Composition",
+     "note": "WRIT 2 or 2E."
+    },
+    {
+     "id": "A2",
+     "kind": "general",
+     "tags": [
+      "A2"
+     ],
+     "min": 1,
+     "label": "Area A-2: English Reading & Composition",
+     "note": "WRIT 50 or 50E, or an approved WRIT 105/107/109 course. Engineering majors are encouraged to take 2E and 50E in their first year."
+    },
+    {
+     "id": "D",
+     "kind": "general",
+     "tags": [
+      "D"
+     ],
+     "min": 2,
+     "label": "Area D: Social Sciences"
+    },
+    {
+     "id": "E",
+     "kind": "general",
+     "tags": [
+      "E"
+     ],
+     "min": 2,
+     "label": "Area E: Culture and Thought"
+    },
+    {
+     "id": "F",
+     "kind": "general",
+     "tags": [
+      "F"
+     ],
+     "min": 1,
+     "label": "Area F: The Arts"
+    },
+    {
+     "id": "G",
+     "kind": "general",
+     "tags": [
+      "G"
+     ],
+     "min": 1,
+     "label": "Area G: Literature"
+    },
+    {
+     "id": "WRT",
+     "kind": "special",
+     "tags": [
+      "WRT"
+     ],
+     "min": 4,
+     "label": "Writing requirement",
+     "note": "Four designated courses, taken within Areas D-G. ENGR 101 counts, even for students who need it for the major."
+    },
+    {
+     "id": "ETH",
+     "kind": "special",
+     "tags": [
+      "ETH"
+     ],
+     "min": 1,
+     "label": "Ethnicity"
+    },
+    {
+     "id": "EUR_NWC",
+     "kind": "special",
+     "tags": [
+      "EUR",
+      "NWC"
+     ],
+     "min": 1,
+     "label": "European Traditions or World Cultures"
     }
    ]
   }

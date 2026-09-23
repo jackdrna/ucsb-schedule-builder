@@ -37,6 +37,13 @@
   --pastel-7: #ffddcc; /* Light orange */
   --pastel-8: #e6ccff; /* Light purple */
 
+  /* Prerequisite tracing in the course directory */
+  --trace-prereq: #d64545;        /* red: arrows in from required prerequisites */
+  --trace-dependent: #e0a91b;     /* gold: arrows out to the courses it unlocks next */
+  --trace-one-of: #a78bfa;        /* violet: a prerequisite that is one of several options */
+  --trace-concurrent: #2dd4bf;    /* teal: a prerequisite that may be taken the same quarter */
+  --trace-tint: rgba(30, 33, 38, 0.78); /* laid over everything outside the trace */
+
   /* Font Stack */
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
 

@@ -1,7 +1,10 @@
 .master-page {
   min-height: 100vh;
+  /* #root is a full-height flex column; without this the page shrinks to the
+     viewport and the grid overflows it. */
+  flex-shrink: 0;
   /* Added 80px top padding so the grid starts cleanly below the floating notch */
-  padding: 80px var(--spacing-lg) var(--spacing-lg); 
+  padding: 80px var(--spacing-lg) var(--spacing-lg);
   background-color: var(--cream-bg);
   position: relative;
 }
@@ -162,21 +165,129 @@
 
 /* Card grid --------------------------------------------------------------- */
 
+/* Independent columns rather than rows, so a short card never leaves a gap
+   waiting on a tall neighbour. MasterPage deals the cards out across them.
+   The arrow overlay also measures cards against this box. */
 .courses-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  /* Wide enough for an arrow to run down the gap well clear of the cards either
+     side (CLEARANCE in PrereqArrows.jsx); keep in step with columnsFor(). */
+  gap: var(--spacing-2xl);
   margin-bottom: var(--spacing-2xl);
-  align-items: start;
+}
+
+.course-column {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-lg);
 }
 
 .courses-container .course-card {
   max-width: 100%;
-  cursor: default;
+  cursor: pointer;
 }
 
 .courses-container .course-card:hover {
   transform: none;
+}
+
+.trace-card {
+  border-radius: var(--radius-lg);
+}
+
+.trace-card:focus-visible {
+  outline: 3px solid #3498db;
+  outline-offset: 2px;
+}
+
+/* The cards in a trace lift above the page tint (.trace-tint, z-index 40) and
+   the arrows (41); everything else, gaps included, stays under the tint. */
+.trace-card.is-self,
+.trace-card.is-pre,
+.trace-card.is-dep {
+  position: relative;
+  z-index: 42;
+}
+
+.trace-card.is-self .course-card {
+  border-color: var(--navy) !important;
+  box-shadow: 0 0 0 3px var(--navy), var(--shadow-md);
+}
+
+/* Greys out the whole page, gaps and all, while a course is traced. The arrows
+   (z-index 41) and the traced courses (42) sit above it. */
+.trace-tint {
+  position: fixed;
+  inset: 0;
+  z-index: 40;
+  background: var(--trace-tint);
+  pointer-events: none;
+  animation: trace-tint-in 0.2s ease-out both;
+}
+
+@keyframes trace-tint-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* What each arrow style means, pinned to a corner above the tint while tracing. */
+.arrow-key {
+  position: fixed;
+  left: var(--spacing-md);
+  bottom: var(--spacing-md);
+  z-index: 43;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 10px 14px;
+  list-style: none;
+  background: var(--navy);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-md);
+  color: white;
+  font-size: 0.78rem;
+  pointer-events: none;
+  animation: trace-tint-in 0.2s ease-out both;
+}
+
+.arrow-key li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow-key svg {
+  width: 36px;
+  height: 12px;
+  flex: none;
+  overflow: visible;
+}
+
+/* The key's sample lines are short, so their dashes are drawn finer. */
+.arrow-key .arrow-line {
+  stroke-width: 3;
+  stroke-dasharray: none;
+}
+
+.arrow-key .one-of .arrow-line,
+.arrow-key .concurrent .arrow-line {
+  stroke-dasharray: 6 4;
+}
+
+.arrow-key .concurrent-one-of .arrow-line {
+  stroke-dasharray: 0.1 5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .trace-tint,
+  .arrow-key {
+    animation: none;
+  }
 }
 
 .error-banner {
@@ -187,9 +298,13 @@
   border-left: 4px solid var(--error-text);
 }
 
+/* The column count is set by columnsFor() in MasterPage.jsx; only spacing is here. */
 @media (max-width: 1024px) {
   .courses-container {
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 40px;
+  }
+
+  .course-column {
     gap: var(--spacing-md);
   }
 }
@@ -198,11 +313,6 @@
   .master-page {
     /* Adjusted padding for mobile */
     padding: 80px var(--spacing-md) var(--spacing-md);
-  }
-
-  .courses-container {
-    grid-template-columns: 1fr;
-    gap: var(--spacing-md);
   }
 
   .directory-controls .result-count {
@@ -214,11 +324,5 @@
     width: 90%;
     justify-content: center;
     padding: var(--spacing-sm) var(--spacing-sm);
-  }
-}
-
-@media (max-width: 480px) {
-  .courses-container {
-    grid-template-columns: 1fr;
   }
 }

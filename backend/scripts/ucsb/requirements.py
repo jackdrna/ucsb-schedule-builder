@@ -71,6 +71,65 @@ def rule_at_least(n, *options):
 GEAR_URL = "https://engineering.ucsb.edu/sites/default/files/images/26-27_GEAR.pdf"
 GEAR = "UCSB GEAR 2026-27"
 
+# ------------------------------------------------- general education (GEAR pp. 11-12)
+#
+# The same for every College of Engineering major, so it is defined once and shared.
+# Unlike the major requirements, this is not a list of course codes: it is a count of
+# courses carrying a tag, and the catalog tags every course itself. `tags` are the
+# values found in a course's `ge_areas` (general) or `special_areas` (special).
+#
+# The two kinds count differently, and the GEAR is explicit about why:
+#
+#   general -- "A course listed in more than one general subject area can be applied
+#              to only one of these areas." So one course fills one general slot, and
+#              the audit has to assign courses to areas rather than count each area
+#              on its own; 67 courses in the catalog carry two general areas.
+#   special -- "a course can be applied towards a single general subject area and any
+#              special subject areas which that course fulfills." So these are plain
+#              counts, and they overlap the general areas by design.
+GENERAL_EDUCATION = {
+    "name": "College of Engineering general education",
+    "source": f"{GEAR}, General Education (pp. 11-12)",
+    "source_url": GEAR_URL,
+    "total_courses": 8,
+    "note": "Eight courses: two in Area A and at least six across Areas D, E, F and G. "
+            "The special subject areas are satisfied inside those same six, not on top "
+            "of them.",
+    # Requirements the app cannot check, so it does not pretend to. Shown to the user
+    # rather than left silent, because a green GE panel would otherwise read as done.
+    "unchecked": [
+        "UC Entry Level Writing Requirement.",
+        "American History and Institutions -- one four-unit course from the GEAR's own "
+        "list. The catalog carries no tag for it, so it is not modelled here; it may "
+        "double count with a GE course.",
+    ],
+    "areas": [
+        {"id": "A1", "kind": "general", "tags": ["A1"], "min": 1,
+         "label": "Area A-1: English Reading & Composition",
+         "note": "WRIT 2 or 2E."},
+        {"id": "A2", "kind": "general", "tags": ["A2"], "min": 1,
+         "label": "Area A-2: English Reading & Composition",
+         "note": "WRIT 50 or 50E, or an approved WRIT 105/107/109 course. Engineering "
+                 "majors are encouraged to take 2E and 50E in their first year."},
+        {"id": "D", "kind": "general", "tags": ["D"], "min": 2,
+         "label": "Area D: Social Sciences"},
+        {"id": "E", "kind": "general", "tags": ["E"], "min": 2,
+         "label": "Area E: Culture and Thought"},
+        {"id": "F", "kind": "general", "tags": ["F"], "min": 1,
+         "label": "Area F: The Arts"},
+        {"id": "G", "kind": "general", "tags": ["G"], "min": 1,
+         "label": "Area G: Literature"},
+        {"id": "WRT", "kind": "special", "tags": ["WRT"], "min": 4,
+         "label": "Writing requirement",
+         "note": "Four designated courses, taken within Areas D-G. ENGR 101 counts, "
+                 "even for students who need it for the major."},
+        {"id": "ETH", "kind": "special", "tags": ["ETH"], "min": 1,
+         "label": "Ethnicity"},
+        {"id": "EUR_NWC", "kind": "special", "tags": ["EUR", "NWC"], "min": 1,
+         "label": "European Traditions or World Cultures"},
+    ],
+}
+
 # The ECE 10 sequence is six separate enrolments; the GEAR lists them as one line.
 ECE_10_SEQUENCE = AND("ECE 10A", "ECE 10AL", "ECE 10B", "ECE 10BL",
                       "ECE 10C", "ECE 10CL")
@@ -298,13 +357,19 @@ CE = {
 }
 
 
+# General education is a College of Engineering requirement, not a departmental one,
+# so both majors carry the same block.
+for _program in (EE, CE):
+    _program["general_education"] = GENERAL_EDUCATION
+
 PROGRAMS = [EE, CE]
 
 if __name__ == "__main__":
     json.dump(PROGRAMS, open(OUT, "w", encoding="utf-8"), indent=1)
     print(f"wrote {os.path.relpath(OUT)}")
 
-    courses = {c["code"] for c in json.load(open(COURSES, encoding="utf-8"))}
+    dataset = json.load(open(COURSES, encoding="utf-8"))
+    courses = {c["code"] for c in dataset}
 
     def codes_in_tree(node):
         if node["t"] == "course":
@@ -331,3 +396,13 @@ if __name__ == "__main__":
               f"{len(referenced)} courses referenced")
         if missing:
             print(f"  NOT IN DATASET: {missing}")
+
+    # A GE area is only checkable if the dataset actually carries courses tagged for
+    # it. An area with fewer courses than its minimum could never be satisfied, which
+    # would mean the tag sweep missed something rather than that UCSB offers nothing.
+    print("\nGE areas in the dataset:")
+    for area in GENERAL_EDUCATION["areas"]:
+        field = "ge_areas" if area["kind"] == "general" else "special_areas"
+        n = sum(1 for c in dataset if set(c.get(field) or []) & set(area["tags"]))
+        flag = "  <-- FEWER THAN THE MINIMUM" if n < area["min"] else ""
+        print(f"  {area['id']:<8} need {area['min']}  have {n:>4}{flag}")

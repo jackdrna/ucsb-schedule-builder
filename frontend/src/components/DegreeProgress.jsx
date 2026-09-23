@@ -57,6 +57,13 @@ function DegreeProgress({ audit, programs, selected, onSelect }) {
             label={audit.depth.label === 'track' ? 'tracks' : 'sequences'}
             value={`${audit.depth.completed.length}/${audit.depth.minComplete}`}
           />
+          {audit.generalEducation && (
+            <Pill
+              met={audit.generalEducation.met}
+              label="G.E. areas"
+              value={`${audit.generalEducation.summary.met}/${audit.generalEducation.summary.total}`}
+            />
+          )}
           <Pill
             met={audit.units.met}
             label="total units"
@@ -76,9 +83,8 @@ function DegreeProgress({ audit, programs, selected, onSelect }) {
       {open && (
         <div className="degree-body">
           <p className="degree-provenance">
-            {audit.program.name}, {audit.program.catalogYear}. Total units and the
-            general-education, writing and free-elective requirements are not modelled
-            here — check with your adviser.
+            {audit.program.name}, {audit.program.catalogYear}. Free electives are not
+            modelled here — check with your adviser.
           </p>
 
           {audit.groups.map((group) => (
@@ -155,9 +161,67 @@ function DegreeProgress({ audit, programs, selected, onSelect }) {
             </ul>
             {audit.depth.note && <p className="degree-note">{audit.depth.note}</p>}
           </div>
+
+          {audit.generalEducation && <GeneralEducation ge={audit.generalEducation} />}
         </div>
       )}
     </section>
+  );
+}
+
+/**
+ * The general education block.
+ *
+ * General areas and special areas are shown apart because they count differently:
+ * a course fills one general area but every special area it carries, so a plan can
+ * read '1/2 Area E' and still have that course counted for Writing and Ethnicity.
+ */
+function GeneralEducation({ ge }) {
+  const general = ge.areas.filter((a) => a.kind === 'general');
+  const special = ge.areas.filter((a) => a.kind === 'special');
+
+  const row = (a) => (
+    <li key={a.id} className={a.met ? 'met' : a.have > 0 ? 'partial' : 'unmet'}>
+      <span className="degree-mark" aria-hidden="true">
+        {a.met ? '✓' : a.have > 0 ? '◐' : '○'}
+      </span>
+      <span className="degree-label">{a.label}</span>
+      <span className="degree-detail">
+        {a.have}/{a.min}
+        {a.courses.length > 0 && ` — ${a.courses.join(', ')}`}
+        {a.note && <em className="degree-note"> {a.note}</em>}
+      </span>
+    </li>
+  );
+
+  return (
+    <div className="degree-group">
+      <h4>
+        {ge.name}
+        <span className="degree-count">
+          {ge.summary.met}/{ge.summary.total} areas
+        </span>
+      </h4>
+
+      <ul className="degree-list">{general.map(row)}</ul>
+
+      <p className="degree-subhead">
+        Special subject areas — satisfied inside Areas D–G, not on top of them
+      </p>
+      <ul className="degree-list">{special.map(row)}</ul>
+
+      {ge.note && <p className="degree-note">{ge.note}</p>}
+      {ge.unchecked.length > 0 && (
+        <p className="degree-note">
+          Not checked here: {ge.unchecked.join(' ')}
+        </p>
+      )}
+      {ge.source && (
+        <p className="degree-note">
+          <a href={ge.sourceUrl} target="_blank" rel="noreferrer">{ge.source}</a>
+        </p>
+      )}
+    </div>
   );
 }
 
